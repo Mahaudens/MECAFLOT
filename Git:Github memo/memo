@@ -1,0 +1,9 @@
+Commit:
+	git add .
+	git commit -m "Message"
+Pull:
+	git pull origin master
+Push:
+	git push -u origin master
+Putsch (Push focé):
+	git push origin master --force
