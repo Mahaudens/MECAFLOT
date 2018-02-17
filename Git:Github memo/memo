@@ -5,5 +5,5 @@ Pull:
 	git pull origin master
 Push:
 	git push -u origin master
-Putsch (Push focé):
+Putsch (Push forcé):
 	git push origin master --force
