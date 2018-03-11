@@ -1,9 +1,0 @@
-Commit:
-	git add .
-	git commit -m "Message"
-Pull:
-	git pull origin master
-Push:
-	git push -u origin master
-Putsch (Push forcé):
-	git push origin master --force

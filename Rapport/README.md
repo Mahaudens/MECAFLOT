@@ -1,3 +1,0 @@
-# MECAFLOT
-# MECAFLOT
-#
