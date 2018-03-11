@@ -1,0 +1,361 @@
+ Thermal/Flow Analysis
+ =====================
+ MAYA Heat Transfer Technologies Ltd.
+
+
+ TMG Thermal/Flow 12.0.0  Sep 12 2017
+
+
+ Run directory specified for analysis:
+ .\
+
+ NX2TMG - Thermal/flow model file builder
+ ======================================================================
+ Time: Sun Mar 11 13:57:54 2018
+
+ +--------------------------------------------------------------------+                              
+ |                            Model Builder                           |                              
+ +--------------------------------------------------------------------+                              
+                                                                                                     
+ Reading model file...                                                                               
+ ...model file read.                                                                                 
+                                                                                                     
+ +--------------------------------------------------------------------+                              
+ |                            Model Summary                           |                              
+ +--------------------------------------------------------------------+                              
+                                                                                                     
+ Finite Element Model                                                                                
+ --------------------                                                                                
+                                                                                                     
+ Solver type:     Simcenter Thermal/Flow                                                             
+ Analysis type:   Flow                                                                               
+ Solution type:   Flow                                                                               
+ Simulation File: C:\Users\Mahaudens Simon\Downloads\Test\MECAFLOT-master\NX\NX\                     
+ Solution:        Solution_1                                                                         
+                                                                                                     
+ Number of nodes in thermal model:                   155520                                          
+ Number of elements in thermal model:                153600                                          
+                                                                                                     
+ Number of nodes in flow model:                      214796                                          
+ Number of elements in flow model:                   106855                                          
+                                                                                                     
+ Number of fluid nodes reused for surface coating:    59276                                          
+ Number of elements created for surface coating:      60798                                          
+                                                                                                     
+ Solution Options                                                                                    
+ ----------------                                                                                    
+                                                                                                     
+ Steady-State Analysis                                                                               
+ Solving Flow and Thermal                                                                            
+                                                                                                     
+ Ambient Temperature:                             2.000E+01 C                                        
+ Ambient Pressure:                                1.014E+02 mN/mm^2                                  
+ Gravitational Acceleration:                      9.810E+03 mm/s^2                                   
+ Gravity Direction: X: 0.000E+00  Y: 0.000E+00  Z:-1.000E+00                                         
+ Fluid buoyancy:                                  Off                                                
+                                                                                                     
+ Flow solver type:                                Serial                                             
+                                                                                                     
+ Flow laminar/turbulent model:                    K-epsilon                                          
+                                                                                                     
+ Flow solver iteration limit:                          1000                                          
+ Flow converged when RMS residual less than:      2.000E-02                                          
+ Flow solver physical time step:                  5.000E-01 s                                        
+ Flow solver heat imbalance:                      2.000E-02                                          
+                                                                                                     
+ Advection Scheme Momentum:                       First Order                                        
+ Advection Scheme Energy (if Solve_Energy):       First Order                                        
+ Advection Scheme K-epsilon:                      First Order                                        
+                                                                                                     
+ Global Relaxation Factor:                        7.500E-01                                          
+ Mass Relaxation Factor:                          7.500E-01                                          
+ Fluids Relaxation Factor:                        9.000E-01                                          
+ Turbulence Relaxation Factor:                    1.000E+00                                          
+                                                                                                     
+ Freeze flow field:                               Off                                                
+ High Speed Flow:                                 Off                                                
+ Connect Disjoint Fluid Meshes:                   On                                                 
+                                                                                                     
+ Performing mesh checks...                                                                           
+                                                                                                     
+  - interior and warping angle                                                                       
+    checks on fluid elements...                                                                      
+
+ +--------------------------------------------------------------------+
+ | NX2TMG - WARNING  1196                                      GRP001 |
+ +--------------------------------------------------------------------+
+ | Distorted fluid element(s) with interior angles < 15 deg. found.   |
+ | The diffusion coefficients of those elements will be modified to   |
+ | avoid convergence problems. The solution will be more robust but   |
+ | less accurate.                                                     |
+ |                                                                    |
+ | List of element labels:                                            |
+ |     295250    295659    295711    296384    296403    296404       |
+ |     296405    296408    296409    296410    296412    296413       |
+ |     296414    296415    296418    296420    296424    296425       |
+ |     296426    296428    296432    296438    296449    296470       |
+ |     296484    299452    299485    299490    299496    299592       |
+ |     299611    299613    299614    299615    299625    299629       |
+ |     299949    299951    299953    299961    299970    302784       |
+ |     302785    302786    302787    302788    302789    302803       |
+ |     302804    302862    302863                                     |
+ | Number of elements found:         51                               |
+ +--------------------------------------------------------------------+
+
+
+ +--------------------------------------------------------------------+
+ | NX2TMG - WARNING  1197                                      GRP002 |
+ +--------------------------------------------------------------------+
+ | Distorted fluid element(s) with interior angles > 165 deg. found.  |
+ | The diffusion coefficients of those elements will be modified to   |
+ | avoid convergence problems. The solution will be more robust but   |
+ | less accurate.                                                     |
+ |                                                                    |
+ | List of element labels:                                            |
+ |   295250  295612  295626  295644  295647  295659  295895  296384   |
+ |   296385  297314  299531  299592  299949  299950  299951  299952   |
+ |   299953  299961  299970                                           |
+ | Number of elements found:     19                                   |
+ +--------------------------------------------------------------------+
+
+    ...angle checks on fluid                                                                         
+       elements completed.                                                                           
+                                                                                                     
+  - interior and warping angle                                                                       
+    checks on thermal elements...                                                                    
+    ...angle checks on thermal                                                                       
+       elements completed.                                                                           
+                                                                                                     
+  - coincident node check                                                                            
+    on fluid model...                                                                                
+    ...node check on fluid                                                                           
+       model completed.                                                                              
+                                                                                                     
+  - coincident node check                                                                            
+    on thermal model...                                                                              
+    ...node check on thermal                                                                         
+       model completed.                                                                              
+                                                                                                     
+  - coincident element check                                                                         
+    on fluid model...                                                                                
+                                                                                                     
+   ... coincident fluid elements                                                                     
+       check completed.                                                                              
+                                                                                                     
+ ...mesh checks completed.                                                                           
+                                                                                                     
+ Building free face list...                                                                          
+ ...found  215358 free faces.                                                                        
+                                                                                                     
+ Processing inlets/outlets/internal fans...                                                          
+                                                                                                     
+  - Building entity face list...                                                                     
+    ...found         80 entity faces.                                                                
+ ...Inlet   1 done.                                                                                  
+                                                                                                     
+ Processing openings...                                                                              
+                                                                                                     
+  - Building entity face list...                                                                     
+    ...found        288 entity faces.                                                                
+ ...Opening  2 done.                                                                                 
+                                                                                                     
+ Processing flow surfaces...                                                                         
+                                                                                                     
+  - Building entity face list...                                                                     
+    ...found        320 entity faces.                                                                
+ ...Flow Surface  1 done,                                                                            
+                                                                                                     
+  - Building entity face list...                                                                     
+    ...found     213710 entity faces.                                                                
+ ...Flow Surface  2 done.                                                                            
+                                                                                                     
+ Processing Lift and Drag Reports...                                                                 
+    ...found        960 entity faces.                                                                
+ ...Lift and Drag Report   1 done.                                                                   
+                                                                                                     
+ Processing disjoint fluid meshes...                                                                 
+  - Automatic disjoint fluid mesh checks                                                             
+    ...no disjoint fluid mesh found                                                                  
+ ...done.                                                                                            
+                                                                                                     
+ Reports                                                                                             
+ -------                                                                                             
+                                                                                                     
+ Number of Reports:                                        1                                         
+                                                                                                     
+ Report                                         Type         Elem Atchd                              
+ ----------------------------------------------------------------------                              
+   1 - Report(1)                                Lift & drag            960                           
+ ----------------------------------------------------------------------                              
+                                                                                                     
+ Surface Property Definitions                                                                        
+ -----------------------------                                                                       
+                                                                                                     
+   1 - Default                                                                                       
+       Roughness: Slip wall (no friction)                                                            
+       Heat Transfer Coefficient: Auto. Calc. Forced Convection                                      
+   2 - Default                                                                                       
+       Roughness: Slip wall (no friction)                                                            
+       Heat Transfer Coefficient: Auto. Calc. Forced Convection                                      
+   3 - Default surface property                                                                      
+       Roughness: Slip wall (no friction)                                                            
+       Heat Transfer Coefficient: Auto. Calc. Forced Convection                                      
+                                                                                                     
+ User Defined Flow Surfaces                                                                          
+ --------------------------                                                                          
+                                                                                                     
+ Number of flow surfaces:                                  2                                         
+                                                                                                     
+ Flow Surface                         Surface Properties     Elements                                
+                                      +ve side / -ve side   Surfc Atchd                              
+ ----------------------------------------------------------------------                              
+   1 - Flow Surface(1)               Default                   320     0                             
+       Area:  8.000E+03 mm^2         Default                                                         
+   2 - Flow Surface(2)               Default                213710     0                             
+       Area:  1.575E+05 mm^2         Default                                                         
+ ----------------------------------------------------------------------                              
+                                                                                                     
+ Inlets                                                                                              
+ ------                                                                                              
+                                                                                                     
+ Number of inlet:                                          1                                         
+                                                                                                     
+ Inlet                               Type           Value                                            
+ ----------------------------------------------------------------------                              
+   1 - Flow Boundary Condition(1)    Velocity        1.000E+04  mm/s                                 
+       Area:  2.000E+03 mm^2                                                                         
+ ----------------------------------------------------------------------                              
+                                                                                                     
+ Openings                                                                                            
+ --------                                                                                            
+                                                                                                     
+ Number of openings:                                       1                                         
+                                                                                                     
+ Opening                             Type                                                            
+ ----------------------------------------------------------------------                              
+   2 - Flow Boundary Condition(2)    Ambient                                                         
+       Area:  2.000E+03 mm^2                                                                         
+ ----------------------------------------------------------------------                              
+                                                                                                     
+ Sub-domains                                                                                         
+ -----------                                                                                         
+                                                                                                     
+ Sub-domain Elements   Fluid                           Volume                                        
+ ----------------------------------------------------------------------                              
+   1          106855   Liquid : Water                  7.8743E+05 mm^3                               
+ ----------------------------------------------------------------------                              
+                                                                                                     
+ Flow Model Conditions:                                                                              
+ ----------------------                                                                              
+                                                                                                     
+ Total Fluid Volume available for Flow: 7.8743E+05 mm^3                                              
+                                                                                                     
+                                                                                                     
+ Estimated Characteristic Velocities, Lengths and Dimensionless Numbers:                             
+                                                                                                     
+ Sub-domain    Velocity         Length          Reynolds     Mach                                    
+ ----------------------------------------------------------------------                              
+   1- Water    4.8430E+03 mm/s  9.2343E+01 mm   4.4455E+05   ----------                              
+ ----------------------------------------------------------------------                              
+
+ +--------------------------------------------------------------------+
+ | NX2TMG - WARNING  1717                                             |
+ +--------------------------------------------------------------------+
+ | Enclosure   1 only contains slip walls.                            |
+ | Turbulence model will not be applied in that enclosure.            |
+ +--------------------------------------------------------------------+
+
+                                                                                                     
+ Writing flow model files...                                                                         
+ ...done.                                                                                            
+
+ Executing Flow Solver Only
+
+ FLOW - Flow analysis
+ ======================================================================
+ Time: Sun Mar 11 14:00:45 2018
+
+
+ +--------------------------------------------------------------------+
+ | Solving Flow Model - Elapsed Time: 00 min 01 sec                   |
+ +--------------------------------------------------------------------+
+
+
+
+ +--------------------------------------------------------------------+
+ |                 Initialization Information                         |
+ +--------------------------------------------------------------------+
+
+  Velocity-Gradient array not found in FLI file.
+  Zero initial values will be used.
+
+  Pressure-Gradients array not found in FLI file.
+  Zero initial values will be used.
+
+
+ +--------------------------------------------------------------------+
+ |         Average Scale Information Sub-domain        1              |
+ +--------------------------------------------------------------------+
+
+ Global Length Scale     :                9.234E+01
+ Density Scale           :                1.000E-06
+ Dynamic Viscosity Scale :                1.006E-06
+ Velocity Scale          :                0.000E+00
+ Prandtl Number          :                6.985E+00
+ Cp Scale                :                4.187E+09
+ Conductivity Scale      :                6.030E+02
+
+
+ +--------------------------------------------------------------------+
+ |                       Convergence History                          |
+ +--------------------------------------------------------------------+
+
+ TIME STEP =     1   SIMULATION TIME = 5.00E-01  CPU SECONDS = 5.23E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.00 | 6.8E-04 | 3.0E-02 |  287365  |       9.1E-02  OK |
+ | V - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.00 | 5.5E-08 | 2.0E-06 |  287365  | 20.5  9.2E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     2   SIMULATION TIME = 1.00E+00  CPU SECONDS = 1.48E+01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 6.6E-04 | 1.3E-01 |  220631  |       2.6E-01  ok |
+ | V - Mom  | 0.00 | 5.8E-04 | 1.2E-01 |  286414  |       3.0E-01  ok |
+ | W - Mom  | 0.00 | 2.9E-05 | 5.0E-03 |  279830  |       2.9E-01  ok |
+ | P - Mass |99.99 | 1.5E-04 | 4.9E-02 |  286414  | 12.7  1.6E+00  F  |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     3   SIMULATION TIME = 1.50E+00  CPU SECONDS = 2.24E+01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.00 | 2.0E-23 | 1.2E-21 |  172385  |       5.1E+19  *  |
+ | V - Mom  | 0.00 | 1.5E-23 | 8.7E-22 |  172385  |       3.7E+19  *  |
+ | W - Mom  | 0.00 | 3.1E-24 | 5.1E-22 |  181689  |       5.1E+19  *  |
+ | P - Mass | 0.00 | 1.2E-44 | 5.9E-43 |  172272  |  8.8  1.9E+20  *  |
+ +----------+------+---------+---------+----------+-------------------+
+ 
+ +--------------------------------------------------------------------+
+ | ERROR #004100030 has occurred in subroutine FINALL.                |
+ | Message:                                                           |
+ | Execution terminating: Solver failure for one or more of the       |
+ | equation(s). Try restarting the run with some relaxation, a        |
+ | lower time step, or some lower resistance values.                  |
+ +--------------------------------------------------------------------+
+
+_#STOP
+
+
+ Run aborted due to fatal errors.
+
+
+ +--------------------------------------------------------------------+
+ |                                END                                 |
+ +--------------------------------------------------------------------+
+
+ Solution elapsed time: 03 min 23 sec
