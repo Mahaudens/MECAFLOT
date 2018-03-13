@@ -8,3 +8,13 @@
  | Turbulence model quantities results option ignored.                |
  +--------------------------------------------------------------------+
 
+
+ +--------------------------------------------------------------------+
+ | ESCRR  - WARNING  1641                                             |
+ +--------------------------------------------------------------------+
+ | Turbulence model quantities results option specified without       |
+ | K-E or SST Turbulence model selected.                              |
+ |                                                                    |
+ | Turbulence model quantities results option ignored.                |
+ +--------------------------------------------------------------------+
+

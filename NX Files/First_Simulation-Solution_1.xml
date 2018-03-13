@@ -4,7 +4,7 @@
 *           Maya Heat Transfer Technologies Ltd, 514-369-5706    
 *
 *        INPUT FILE: First_Simulation-Solution_1.xml
-*        CREATED ON: Tue Mar 13 01:37:55 2018
+*        CREATED ON: Tue Mar 13 13:30:46 2018
 *          SIM FILE: C:\Users\Mahaudens Simon\Documents\Meca Flot Projet\MECAFLOT\MECAFLOT\NX Files\First Simulation.sim
 *          FEM FILE: C:\Users\Mahaudens Simon\Documents\Meca Flot Projet\MECAFLOT\MECAFLOT\NX Files\Maillage Preliminaire avec 3D Swept.fem
 *
@@ -28222,13 +28222,13 @@
   </Constraints>
   <SimulationObjects>
     <FlowBcList>
-      <FlowBc uid="1" uname="Entrée : vitesse de 10 m/s" type="Inlet">
+      <FlowBc uid="1" uname="Entrée : vitesse de 10 mm/s" type="Inlet">
         <Description></Description>
         <Property name="Mode Option">
           <Value>0</Value>
         </Property>
         <Property name="Velocity">
-          <Value>  1.0000000E+04</Value>
+          <Value>  1.0000000E+01</Value>
         </Property>
         <Property name="Velocity Vector">
           <Value>  0.0000000E+00     0.0000000E+00     0.0000000E+00</Value>
