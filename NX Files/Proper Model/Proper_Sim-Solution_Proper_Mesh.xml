@@ -4,9 +4,9 @@
 *           Maya Heat Transfer Technologies Ltd, 514-369-5706    
 *
 *        INPUT FILE: Proper_Sim-Solution_Proper_Mesh.xml
-*        CREATED ON: Tue Mar 13 17:10:09 2018
-*          SIM FILE: C:\Users\Yann\Documents\YANN\MecaF\MECAFLOT\NX Files\Proper Sim.sim
-*          FEM FILE: C:\Users\Yann\Documents\YANN\MecaF\MECAFLOT\NX Files\Proper mesh.fem
+*        CREATED ON: Wed Mar 14 16:18:33 2018
+*          SIM FILE: C:\Users\Yann\Documents\YANN\MecaF\MECAFLOT\NX Files\Proper Model\Proper Sim.sim
+*          FEM FILE: C:\Users\Yann\Documents\YANN\MecaF\MECAFLOT\NX Files\Proper Model\Proper mesh.fem
 *
 *================================================================ 
 -->
@@ -436,7 +436,7 @@
         <Value>1</Value>
       </Property>
       <Property name="Wall Treatment">
-        <Value>0</Value>
+        <Value>2</Value>
       </Property>
       <Property name="Default Wall Friction">
         <Value>0</Value>
@@ -645,6 +645,29 @@
       </Property>
       <Property name="Molar Mass" type="Constant">
         <Value>  1.8000000E-02</Value>
+      </Property>
+    </Material>
+    <Material uid="2" uname="Air" type="GAS">
+      <Property name="Mass Density" type="Constant">
+        <Value>  1.2041000E-09</Value>
+      </Property>
+      <Property name="Thermal Conductivity" type="Constant">
+        <Value>  2.6300000E+01</Value>
+      </Property>
+      <Property name="Thermal Expansion" type="Constant">
+        <Value>  3.4100000E-03</Value>
+      </Property>
+      <Property name="Dynamic Viscosity" type="Constant">
+        <Value>  1.8500000E-08</Value>
+      </Property>
+      <Property name="Specific Heat Constant Pressure" type="Constant">
+        <Value>  1.0070000E+09</Value>
+      </Property>
+      <Property name="Molar Mass" type="Constant">
+        <Value>  2.8970000E-02</Value>
+      </Property>
+      <Property name="Gas Constant" type="Constant">
+        <Value>  2.8700000E+08</Value>
       </Property>
     </Material>
   </MaterialList>
@@ -10925,7 +10948,7 @@
       <E>9899   10303   10163   10162   10302</E>
       <E>9900   10302   10162   10161   10301</E>
     </Set>
-    <Set uname="3d_mesh(1)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(1)" elementType="HEXA8" material="2" movOption="0">
       <E>10201   2   11   10   1   5302   5311   5310   5301</E>
       <E>10202   3   12   11   2   5303   5312   5311   5302</E>
       <E>10203   4   13   12   3   5304   5313   5312   5303</E>
@@ -11527,7 +11550,7 @@
       <E>10799   630   3   2   629   5930   5303   5302   5929</E>
       <E>10800   629   2   1   628   5929   5302   5301   5928</E>
     </Set>
-    <Set uname="3d_mesh(2)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(2)" elementType="HEXA8" material="2" movOption="0">
       <E>10801   1153   1182   1181   1152   5973   6002   6001   5972</E>
       <E>10802   1154   1183   1182   1153   5974   6003   6002   5973</E>
       <E>10803   1155   1184   1183   1154   5975   6004   6003   5974</E>
@@ -11979,7 +12002,7 @@
       <E>11249   1569   1154   1153   1570   6389   5974   5973   6390</E>
       <E>11250   1570   1153   1152   1571   6390   5973   5972   6391</E>
     </Set>
-    <Set uname="3d_mesh(3)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(3)" elementType="HEXA8" material="2" movOption="0">
       <E>11251   673   702   701   672   6453   6482   6481   6452</E>
       <E>11252   674   703   702   673   6454   6483   6482   6453</E>
       <E>11253   675   704   703   674   6455   6484   6483   6454</E>
@@ -12431,7 +12454,7 @@
       <E>11699   1080   674   673   1079   6860   6454   6453   6859</E>
       <E>11700   1079   673   672   1078   6859   6453   6452   6858</E>
     </Set>
-    <Set uname="3d_mesh(4)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(4)" elementType="HEXA8" material="2" movOption="0">
       <E>11701   1633   1647   1646   1632   8802   8816   8815   8801</E>
       <E>11702   1634   1648   1647   1633   8803   8817   8816   8802</E>
       <E>11703   1635   1649   1648   1634   8804   8818   8817   8803</E>
@@ -13033,7 +13056,7 @@
       <E>12299   2180   1634   1633   2179   9349   8803   8802   9348</E>
       <E>12300   2179   1633   1632   2178   9348   8802   8801   9347</E>
     </Set>
-    <Set uname="3d_mesh(5)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(5)" elementType="HEXA8" material="2" movOption="0">
       <E>12301   2273   2312   2311   2272   7573   7612   7611   7572</E>
       <E>12302   2274   2313   2312   2273   7574   7613   7612   7573</E>
       <E>12303   2275   2314   2313   2274   7575   7614   7613   7574</E>
@@ -14235,7 +14258,7 @@
       <E>13499   2267   2274   2273   2268   8734   7574   7573   8733</E>
       <E>13500   2268   2273   2272   2269   8733   7573   7572   8732</E>
     </Set>
-    <Set uname="3d_mesh(6)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(6)" elementType="HEXA8" material="2" movOption="0">
       <E>13501   3502   3541   3540   3501   6933   6972   6971   6932</E>
       <E>13502   3503   3542   3541   3502   6934   6973   6972   6933</E>
       <E>13503   3504   3543   3542   3503   6935   6974   6973   6934</E>
@@ -14837,7 +14860,7 @@
       <E>14099   4063   3503   3502   4062   7533   6934   6933   7532</E>
       <E>14100   4062   3502   3501   4061   7532   6933   6932   7531</E>
     </Set>
-    <Set uname="3d_mesh(7)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(7)" elementType="HEXA8" material="2" movOption="0">
       <E>14101   4712   4726   4725   4711   9402   9416   9415   9401</E>
       <E>14102   4713   4727   4726   4712   9403   9417   9416   9402</E>
       <E>14103   4714   4728   4727   4713   9404   9418   9417   9403</E>
@@ -14989,7 +15012,7 @@
       <E>14249   4848   4713   4712   4847   9547   9403   9402   9546</E>
       <E>14250   4847   4712   4711   4846   9546   9402   9401   9545</E>
     </Set>
-    <Set uname="3d_mesh(8)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(8)" elementType="HEXA8" material="2" movOption="0">
       <E>14251   4562   4576   4575   4561   9562   9576   9575   9561</E>
       <E>14252   4563   4577   4576   4562   9563   9577   9576   9562</E>
       <E>14253   4564   4578   4577   4563   9564   9578   9577   9563</E>
@@ -15141,7 +15164,7 @@
       <E>14399   4698   4563   4562   4697   9698   9563   9562   9697</E>
       <E>14400   4697   4562   4561   4696   9697   9562   9561   9696</E>
     </Set>
-    <Set uname="3d_mesh(9)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(9)" elementType="HEXA8" material="2" movOption="0">
       <E>14401   4862   4871   4870   4861   10462   10471   10470   10461</E>
       <E>14402   4863   4872   4871   4862   10463   10472   10471   10462</E>
       <E>14403   4864   4873   4872   4863   10464   10473   10472   10463</E>
@@ -15293,7 +15316,7 @@
       <E>14549   4843   4863   4862   4844   9538   10463   10462   9537</E>
       <E>14550   4844   4862   4861   4845   9537   10462   10461   9536</E>
     </Set>
-    <Set uname="3d_mesh(10)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(10)" elementType="HEXA8" material="2" movOption="0">
       <E>14551   5012   5026   5025   5011   10312   10326   10325   10311</E>
       <E>14552   5013   5027   5026   5012   10313   10327   10326   10312</E>
       <E>14553   5014   5028   5027   5013   10314   10328   10327   10313</E>
@@ -15445,7 +15468,7 @@
       <E>14699   1137   5013   5012   1136   6926   10313   10312   6927</E>
       <E>14700   1136   5012   5011   1135   6927   10312   10311   6928</E>
     </Set>
-    <Set uname="3d_mesh(11)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(11)" elementType="HEXA8" material="2" movOption="0">
       <E>14701   5162   5171   5170   5161   10162   10171   10170   10161</E>
       <E>14702   5163   5172   5171   5162   10163   10172   10171   10162</E>
       <E>14703   5164   5173   5172   5163   10164   10173   10172   10163</E>
@@ -15597,7 +15620,7 @@
       <E>14849   5157   5163   5162   5158   10303   10163   10162   10302</E>
       <E>14850   5158   5162   5161   5159   10302   10162   10161   10301</E>
     </Set>
-    <Set uname="3d_mesh(12)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(12)" elementType="HEXA8" material="2" movOption="0">
       <E>14851   4412   4421   4420   4411   10012   10021   10020   10011</E>
       <E>14852   4413   4422   4421   4412   10013   10022   10021   10012</E>
       <E>14853   4414   4423   4422   4413   10014   10023   10022   10013</E>
@@ -15749,7 +15772,7 @@
       <E>14999   4557   4413   4412   4558   10153   10013   10012   10152</E>
       <E>15000   4558   4412   4411   4559   10152   10012   10011   10151</E>
     </Set>
-    <Set uname="3d_mesh(13)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(13)" elementType="HEXA8" material="2" movOption="0">
       <E>15001   4102   4116   4115   4101   9862   9876   9875   9861</E>
       <E>15002   4103   4117   4116   4102   9863   9877   9876   9862</E>
       <E>15003   4104   4118   4117   4103   9864   9878   9877   9863</E>
@@ -15901,7 +15924,7 @@
       <E>15149   4238   4103   4102   4237   9989   9863   9862   9988</E>
       <E>15150   4237   4102   4101   4236   9988   9862   9861   9987</E>
     </Set>
-    <Set uname="3d_mesh(14)" elementType="HEXA8" material="1" movOption="0">
+    <Set uname="3d_mesh(14)" elementType="HEXA8" material="2" movOption="0">
       <E>15151   4262   4271   4270   4261   9712   9721   9720   9711</E>
       <E>15152   4263   4272   4271   4262   9713   9722   9721   9712</E>
       <E>15153   4264   4273   4272   4263   9714   9723   9722   9713</E>
@@ -26802,7 +26825,7 @@
           <fa>10724   5</fa>
         </Selection>
       </FlowBc>
-      <FlowBc uid="2" uname="Flow Boundary Condition(2)" type="Opening">
+      <FlowBc uid="2" uname="Pression" type="Opening">
         <Description></Description>
         <Property name="Inlet Conditions">
           <Value>-1</Value>
@@ -26893,7 +26916,165 @@
       </FlowBc>
     </FlowBcList>
     <FlowSurfaceList>
-      <FlowSurface uid="1" uname="Flow Surface(1)" type="Boundary Flow Surface">
+      <FlowSurface uid="2" uname="No slip wall" type="Boundary Flow Surface">
+        <Description></Description>
+        <Property name="Wall Treatment">
+          <Value>2</Value>
+        </Property>
+        <Property name="Wall Friction">
+          <Value>0</Value>
+        </Property>
+        <Property name="Sand Grain Roughness Height">
+          <Value>  0.0000000E+00</Value>
+        </Property>
+        <Property name="Convection Properties">
+          <Value>-1</Value>
+        </Property>
+        <Property name="Rotating Translating Surface in Shear">
+          <Value>0</Value>
+        </Property>
+        <Property name="Motion Type">
+          <Value>0</Value>
+        </Property>
+        <Property name="Rotation Axis Option">
+          <Value>1</Value>
+        </Property>
+        <Property name="Rotation Axis">
+          <Value>  0.0000000E+00     0.0000000E+00     0.0000000E+00     1.0000000E+00     0.0000000E+00     0.0000000E+00</Value>
+        </Property>
+        <Property name="Rotation Rate">
+          <Value>  0.0000000E+00</Value>
+        </Property>
+        <Property name="Translation Vector">
+          <Value>  0.0000000E+00     0.0000000E+00     0.0000000E+00</Value>
+        </Property>
+        <Property name="Translation Velocity">
+          <Value>  0.0000000E+00</Value>
+        </Property>
+        <Selection step="1">
+          <fa>14205   6</fa>
+          <fa>14237   6</fa>
+          <fa>14238   6</fa>
+          <fa>14239   6</fa>
+          <fa>14240   6</fa>
+          <fa>14241   6</fa>
+          <fa>14242   6</fa>
+          <fa>14243   6</fa>
+          <fa>14244   6</fa>
+          <fa>14245   6</fa>
+          <fa>14246   6</fa>
+          <fa>14247   6</fa>
+          <fa>14248   6</fa>
+          <fa>14249   6</fa>
+          <fa>14250   6</fa>
+          <fa>14355   6</fa>
+          <fa>14387   6</fa>
+          <fa>14388   6</fa>
+          <fa>14389   6</fa>
+          <fa>14390   6</fa>
+          <fa>14391   6</fa>
+          <fa>14392   6</fa>
+          <fa>14393   6</fa>
+          <fa>14394   6</fa>
+          <fa>14395   6</fa>
+          <fa>14396   6</fa>
+          <fa>14397   6</fa>
+          <fa>14398   6</fa>
+          <fa>14399   6</fa>
+          <fa>14400   6</fa>
+          <fa>14505   5</fa>
+          <fa>14506   5</fa>
+          <fa>14507   5</fa>
+          <fa>14508   5</fa>
+          <fa>14509   5</fa>
+          <fa>14510   5</fa>
+          <fa>14511   5</fa>
+          <fa>14512   5</fa>
+          <fa>14513   5</fa>
+          <fa>14514   5</fa>
+          <fa>14515   5</fa>
+          <fa>14516   5</fa>
+          <fa>14517   5</fa>
+          <fa>14518   5</fa>
+          <fa>14519   5</fa>
+          <fa>14664   4</fa>
+          <fa>14665   4</fa>
+          <fa>14666   4</fa>
+          <fa>14667   4</fa>
+          <fa>14668   4</fa>
+          <fa>14669   4</fa>
+          <fa>14670   4</fa>
+          <fa>14671   4</fa>
+          <fa>14672   4</fa>
+          <fa>14673   4</fa>
+          <fa>14674   4</fa>
+          <fa>14675   4</fa>
+          <fa>14676   4</fa>
+          <fa>14677   4</fa>
+          <fa>14678   4</fa>
+          <fa>14805   5</fa>
+          <fa>14806   5</fa>
+          <fa>14807   5</fa>
+          <fa>14808   5</fa>
+          <fa>14809   5</fa>
+          <fa>14810   5</fa>
+          <fa>14811   5</fa>
+          <fa>14812   5</fa>
+          <fa>14813   5</fa>
+          <fa>14814   5</fa>
+          <fa>14815   5</fa>
+          <fa>14816   5</fa>
+          <fa>14817   5</fa>
+          <fa>14818   5</fa>
+          <fa>14819   5</fa>
+          <fa>14955   5</fa>
+          <fa>14956   5</fa>
+          <fa>14957   5</fa>
+          <fa>14958   5</fa>
+          <fa>14959   5</fa>
+          <fa>14960   5</fa>
+          <fa>14961   5</fa>
+          <fa>14962   5</fa>
+          <fa>14963   5</fa>
+          <fa>14964   5</fa>
+          <fa>14965   5</fa>
+          <fa>14966   5</fa>
+          <fa>14967   5</fa>
+          <fa>14968   5</fa>
+          <fa>14969   5</fa>
+          <fa>15105   6</fa>
+          <fa>15137   6</fa>
+          <fa>15138   6</fa>
+          <fa>15139   6</fa>
+          <fa>15140   6</fa>
+          <fa>15141   6</fa>
+          <fa>15142   6</fa>
+          <fa>15143   6</fa>
+          <fa>15144   6</fa>
+          <fa>15145   6</fa>
+          <fa>15146   6</fa>
+          <fa>15147   6</fa>
+          <fa>15148   6</fa>
+          <fa>15149   6</fa>
+          <fa>15150   6</fa>
+          <fa>15278   3</fa>
+          <fa>15279   3</fa>
+          <fa>15280   3</fa>
+          <fa>15281   3</fa>
+          <fa>15282   3</fa>
+          <fa>15283   3</fa>
+          <fa>15284   3</fa>
+          <fa>15285   3</fa>
+          <fa>15286   3</fa>
+          <fa>15287   3</fa>
+          <fa>15288   3</fa>
+          <fa>15289   3</fa>
+          <fa>15290   3</fa>
+          <fa>15291   3</fa>
+          <fa>15292   3</fa>
+        </Selection>
+      </FlowSurface>
+      <FlowSurface uid="4" uname="Slip lateral surface" type="Boundary Flow Surface">
         <Description></Description>
         <Property name="Wall Treatment">
           <Value>1</Value>
@@ -27091,10 +27272,10 @@
           <fa>14100   6</fa>
         </Selection>
       </FlowSurface>
-      <FlowSurface uid="2" uname="Flow Surface(2)" type="Boundary Flow Surface">
+      <FlowSurface uid="5" uname="Slip wall upper lower" type="Boundary Flow Surface">
         <Description></Description>
         <Property name="Wall Treatment">
-          <Value>2</Value>
+          <Value>1</Value>
         </Property>
         <Property name="Wall Friction">
           <Value>0</Value>
@@ -27103,176 +27284,6 @@
           <Value>  0.0000000E+00</Value>
         </Property>
         <Property name="Convection Properties">
-          <Value>-1</Value>
-        </Property>
-        <Property name="Rotating Translating Surface in Shear">
-          <Value>0</Value>
-        </Property>
-        <Property name="Motion Type">
-          <Value>0</Value>
-        </Property>
-        <Property name="Rotation Axis Option">
-          <Value>1</Value>
-        </Property>
-        <Property name="Rotation Axis">
-          <Value>  0.0000000E+00     0.0000000E+00     0.0000000E+00     1.0000000E+00     0.0000000E+00     0.0000000E+00</Value>
-        </Property>
-        <Property name="Rotation Rate">
-          <Value>  0.0000000E+00</Value>
-        </Property>
-        <Property name="Translation Vector">
-          <Value>  0.0000000E+00     0.0000000E+00     0.0000000E+00</Value>
-        </Property>
-        <Property name="Translation Velocity">
-          <Value>  0.0000000E+00</Value>
-        </Property>
-        <Selection step="1">
-          <fa>14205   6</fa>
-          <fa>14237   6</fa>
-          <fa>14238   6</fa>
-          <fa>14239   6</fa>
-          <fa>14240   6</fa>
-          <fa>14241   6</fa>
-          <fa>14242   6</fa>
-          <fa>14243   6</fa>
-          <fa>14244   6</fa>
-          <fa>14245   6</fa>
-          <fa>14246   6</fa>
-          <fa>14247   6</fa>
-          <fa>14248   6</fa>
-          <fa>14249   6</fa>
-          <fa>14250   6</fa>
-          <fa>14355   6</fa>
-          <fa>14387   6</fa>
-          <fa>14388   6</fa>
-          <fa>14389   6</fa>
-          <fa>14390   6</fa>
-          <fa>14391   6</fa>
-          <fa>14392   6</fa>
-          <fa>14393   6</fa>
-          <fa>14394   6</fa>
-          <fa>14395   6</fa>
-          <fa>14396   6</fa>
-          <fa>14397   6</fa>
-          <fa>14398   6</fa>
-          <fa>14399   6</fa>
-          <fa>14400   6</fa>
-          <fa>14505   5</fa>
-          <fa>14506   5</fa>
-          <fa>14507   5</fa>
-          <fa>14508   5</fa>
-          <fa>14509   5</fa>
-          <fa>14510   5</fa>
-          <fa>14511   5</fa>
-          <fa>14512   5</fa>
-          <fa>14513   5</fa>
-          <fa>14514   5</fa>
-          <fa>14515   5</fa>
-          <fa>14516   5</fa>
-          <fa>14517   5</fa>
-          <fa>14518   5</fa>
-          <fa>14519   5</fa>
-          <fa>14664   4</fa>
-          <fa>14665   4</fa>
-          <fa>14666   4</fa>
-          <fa>14667   4</fa>
-          <fa>14668   4</fa>
-          <fa>14669   4</fa>
-          <fa>14670   4</fa>
-          <fa>14671   4</fa>
-          <fa>14672   4</fa>
-          <fa>14673   4</fa>
-          <fa>14674   4</fa>
-          <fa>14675   4</fa>
-          <fa>14676   4</fa>
-          <fa>14677   4</fa>
-          <fa>14678   4</fa>
-          <fa>14805   5</fa>
-          <fa>14806   5</fa>
-          <fa>14807   5</fa>
-          <fa>14808   5</fa>
-          <fa>14809   5</fa>
-          <fa>14810   5</fa>
-          <fa>14811   5</fa>
-          <fa>14812   5</fa>
-          <fa>14813   5</fa>
-          <fa>14814   5</fa>
-          <fa>14815   5</fa>
-          <fa>14816   5</fa>
-          <fa>14817   5</fa>
-          <fa>14818   5</fa>
-          <fa>14819   5</fa>
-          <fa>14955   5</fa>
-          <fa>14956   5</fa>
-          <fa>14957   5</fa>
-          <fa>14958   5</fa>
-          <fa>14959   5</fa>
-          <fa>14960   5</fa>
-          <fa>14961   5</fa>
-          <fa>14962   5</fa>
-          <fa>14963   5</fa>
-          <fa>14964   5</fa>
-          <fa>14965   5</fa>
-          <fa>14966   5</fa>
-          <fa>14967   5</fa>
-          <fa>14968   5</fa>
-          <fa>14969   5</fa>
-          <fa>15105   6</fa>
-          <fa>15137   6</fa>
-          <fa>15138   6</fa>
-          <fa>15139   6</fa>
-          <fa>15140   6</fa>
-          <fa>15141   6</fa>
-          <fa>15142   6</fa>
-          <fa>15143   6</fa>
-          <fa>15144   6</fa>
-          <fa>15145   6</fa>
-          <fa>15146   6</fa>
-          <fa>15147   6</fa>
-          <fa>15148   6</fa>
-          <fa>15149   6</fa>
-          <fa>15150   6</fa>
-          <fa>15278   3</fa>
-          <fa>15279   3</fa>
-          <fa>15280   3</fa>
-          <fa>15281   3</fa>
-          <fa>15282   3</fa>
-          <fa>15283   3</fa>
-          <fa>15284   3</fa>
-          <fa>15285   3</fa>
-          <fa>15286   3</fa>
-          <fa>15287   3</fa>
-          <fa>15288   3</fa>
-          <fa>15289   3</fa>
-          <fa>15290   3</fa>
-          <fa>15291   3</fa>
-          <fa>15292   3</fa>
-        </Selection>
-      </FlowSurface>
-      <FlowSurface uid="3" uname="Flow Surface(3)" type="Embedded Flow Surface">
-        <Description></Description>
-        <Property name="Top Surface Wall Treatment">
-          <Value>1</Value>
-        </Property>
-        <Property name="Top Surface Wall Friction">
-          <Value>0</Value>
-        </Property>
-        <Property name="Top Surface Sand Grain Roughness Height">
-          <Value>  0.0000000E+00</Value>
-        </Property>
-        <Property name="Top Surface Convection Properties">
-          <Value>-1</Value>
-        </Property>
-        <Property name="Bottom Surface Wall Treatment">
-          <Value>0</Value>
-        </Property>
-        <Property name="Bottom Surface Wall Friction">
-          <Value>0</Value>
-        </Property>
-        <Property name="Bottom Surface Sand Grain Roughness Height">
-          <Value>  0.0000000E+00</Value>
-        </Property>
-        <Property name="Bottom Surface Convection Properties">
           <Value>-1</Value>
         </Property>
         <Property name="Rotating Translating Surface in Shear">

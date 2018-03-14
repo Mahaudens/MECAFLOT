@@ -4,9 +4,9 @@
 *           Maya Heat Transfer Technologies Ltd, 514-369-5706    
 *
 *        INPUT FILE: mapdata.xml
-*        CREATED ON: Tue Mar 13 17:10:10 2018
-*          SIM FILE: C:\Users\Yann\Documents\YANN\MecaF\MECAFLOT\NX Files\Proper Sim.sim
-*          FEM FILE: C:\Users\Yann\Documents\YANN\MecaF\MECAFLOT\NX Files\Proper mesh.fem
+*        CREATED ON: Wed Mar 14 16:18:34 2018
+*          SIM FILE: C:\Users\Yann\Documents\YANN\MecaF\MECAFLOT\NX Files\Proper Model\Proper Sim.sim
+*          FEM FILE: C:\Users\Yann\Documents\YANN\MecaF\MECAFLOT\NX Files\Proper Model\Proper mesh.fem
 *
 *=============================================================== 
 -->
@@ -162,7 +162,7 @@
         <Value>1</Value>
       </Property>
       <Property name="Wall Treatment">
-        <Value>0</Value>
+        <Value>2</Value>
       </Property>
       <Property name="Default Wall Friction">
         <Value>0</Value>

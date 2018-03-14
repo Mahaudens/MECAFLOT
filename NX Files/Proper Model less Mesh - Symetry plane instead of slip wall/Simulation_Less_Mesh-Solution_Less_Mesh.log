@@ -1,0 +1,1514 @@
+ Thermal/Flow Analysis
+ =====================
+ MAYA Heat Transfer Technologies Ltd.
+
+
+ TMG Thermal/Flow 12.0.0  Sep 12 2017
+
+
+ Run directory specified for analysis:
+ .\
+
+ NX2TMG - Thermal/flow model file builder
+ ======================================================================
+ Time: Wed Mar 14 16:49:08 2018
+
+ +--------------------------------------------------------------------+                              
+ |                            Model Builder                           |                              
+ +--------------------------------------------------------------------+                              
+                                                                                                     
+ Reading model file...                                                                               
+ ...model file read.                                                                                 
+                                                                                                     
+ +--------------------------------------------------------------------+                              
+ |                            Model Summary                           |                              
+ +--------------------------------------------------------------------+                              
+                                                                                                     
+ Finite Element Model                                                                                
+ --------------------                                                                                
+                                                                                                     
+ Solver type:     Simcenter Thermal/Flow                                                             
+ Analysis type:   Flow                                                                               
+ Solution type:   Flow                                                                               
+ Simulation File: C:\Users\Yann\Documents\YANN\MecaF\MECAFLOT\NX Files\Proper Mo                     
+ Solution:                                                                                           
+                                                                                                     
+ Number of nodes in thermal model:                     2542                                          
+ Number of elements in thermal model:                  2352                                          
+                                                                                                     
+ Number of nodes in flow model:                        2542                                          
+ Number of elements in flow model:                     1176                                          
+                                                                                                     
+ Number of elements created for surface coating:        190                                          
+                                                                                                     
+ Solution Options                                                                                    
+ ----------------                                                                                    
+                                                                                                     
+ Steady-State Analysis                                                                               
+ Solving Flow and Thermal                                                                            
+                                                                                                     
+ Ambient Temperature:                             2.000E+01 C                                        
+ Ambient Pressure:                                1.014E+02 mN/mm^2                                  
+ Gravitational Acceleration:                      9.810E+03 mm/s^2                                   
+ Gravity Direction: X: 0.000E+00  Y: 0.000E+00  Z:-1.000E+00                                         
+ Fluid buoyancy:                                  Off                                                
+                                                                                                     
+ Flow solver type:                                Serial                                             
+                                                                                                     
+ Flow laminar/turbulent model:                    K-epsilon                                          
+                                                                                                     
+ Flow solver iteration limit:                          1000                                          
+ Flow converged when RMS residual less than:      2.000E-04                                          
+ Flow solver physical time step:                  5.000E-01 s                                        
+ Flow solver heat imbalance:                      2.000E-02                                          
+                                                                                                     
+ Advection Scheme Momentum:                       First Order                                        
+ Advection Scheme Energy (if Solve_Energy):       First Order                                        
+ Advection Scheme K-epsilon:                      First Order                                        
+                                                                                                     
+ Global Relaxation Factor:                        7.500E-01                                          
+ Mass Relaxation Factor:                          7.500E-01                                          
+ Fluids Relaxation Factor:                        9.000E-01                                          
+ Turbulence Relaxation Factor:                    1.000E+00                                          
+                                                                                                     
+ Freeze flow field:                               Off                                                
+ High Speed Flow:                                 Off                                                
+ Connect Disjoint Fluid Meshes:                   On                                                 
+                                                                                                     
+ Performing mesh checks...                                                                           
+                                                                                                     
+  - interior and warping angle                                                                       
+    checks on fluid elements...                                                                      
+    ...angle checks on fluid                                                                         
+       elements completed.                                                                           
+                                                                                                     
+  - interior and warping angle                                                                       
+    checks on thermal elements...                                                                    
+    ...angle checks on thermal                                                                       
+       elements completed.                                                                           
+                                                                                                     
+  - coincident node check                                                                            
+    on fluid model...                                                                                
+    ...node check on fluid                                                                           
+       model completed.                                                                              
+                                                                                                     
+  - coincident node check                                                                            
+    on thermal model...                                                                              
+    ...node check on thermal                                                                         
+       model completed.                                                                              
+                                                                                                     
+  - coincident element check                                                                         
+    on fluid model...                                                                                
+                                                                                                     
+   ... coincident fluid elements                                                                     
+       check completed.                                                                              
+                                                                                                     
+ ...mesh checks completed.                                                                           
+                                                                                                     
+ Building free face list...                                                                          
+ ...found    2542 free faces.                                                                        
+                                                                                                     
+ Processing inlets/outlets/internal fans...                                                          
+                                                                                                     
+  - Building entity face list...                                                                     
+    ...found         28 entity faces.                                                                
+ ...Inlet   3 done.                                                                                  
+                                                                                                     
+ Processing openings...                                                                              
+                                                                                                     
+  - Building entity face list...                                                                     
+    ...found         28 entity faces.                                                                
+ ...Opening  4 done.                                                                                 
+                                                                                                     
+ Processing flow surfaces...                                                                         
+                                                                                                     
+  - Building entity face list...                                                                     
+    ...found         78 entity faces.                                                                
+ ...Flow Surface  3 done,                                                                            
+                                                                                                     
+  - Building entity face list...                                                                     
+    ...found         56 entity faces.                                                                
+ ...Flow Surface  4 done.                                                                            
+                                                                                                     
+ Processing symmetry BCs...                                                                          
+                                                                                                     
+  - Building entity face list...                                                                     
+    ...found       1176 entity faces.                                                                
+ ...Symmetry BC  1 done,                                                                             
+                                                                                                     
+  - Building entity face list...                                                                     
+    ...found       1176 entity faces.                                                                
+ ...Symmetry BC  2 done.                                                                             
+                                                                                                     
+ Processing Lift and Drag Reports...                                                                 
+    ...found         56 entity faces.                                                                
+ ...Lift and Drag Report   1 done.                                                                   
+                                                                                                     
+ Processing disjoint fluid meshes...                                                                 
+  - Automatic disjoint fluid mesh checks                                                             
+    ...no disjoint fluid mesh found                                                                  
+ ...done.                                                                                            
+                                                                                                     
+ Reports                                                                                             
+ -------                                                                                             
+                                                                                                     
+ Number of Reports:                                        1                                         
+                                                                                                     
+ Report                                         Type         Elem Atchd                              
+ ----------------------------------------------------------------------                              
+   1 - Report(1)                                Lift & drag             56                           
+ ----------------------------------------------------------------------                              
+                                                                                                     
+ Surface Property Definitions                                                                        
+ -----------------------------                                                                       
+                                                                                                     
+   1 - Default                                                                                       
+       Roughness: Slip wall (no friction)                                                            
+       Heat Transfer Coefficient: Auto. Calc. Forced Convection                                      
+   2 - Default                                                                                       
+       Roughness: Slip wall (no friction)                                                            
+       Heat Transfer Coefficient: Auto. Calc. Forced Convection                                      
+   3 - Default surface property                                                                      
+       Roughness:  0.000E+00 mm                                                                      
+       Heat Transfer Coefficient: Auto. Calc. Forced Convection                                      
+                                                                                                     
+ User Defined Flow Surfaces                                                                          
+ --------------------------                                                                          
+                                                                                                     
+ Number of flow surfaces:                                  2                                         
+                                                                                                     
+ Flow Surface                         Surface Properties     Elements                                
+                                      +ve side / -ve side   Surfc Atchd                              
+ ----------------------------------------------------------------------                              
+   3 - Slip lateral wall             Default                    78     0                             
+       Area:  8.000E+03 mm^2         Default                                                         
+   4 - No slip wall                  Default                    56     0                             
+       Area:  1.256E+03 mm^2         Default                                                         
+ ----------------------------------------------------------------------                              
+                                                                                                     
+ Inlets                                                                                              
+ ------                                                                                              
+                                                                                                     
+ Number of inlet:                                          1                                         
+                                                                                                     
+ Inlet                               Type           Value                                            
+ ----------------------------------------------------------------------                              
+   3 - Vitesse initiale              Velocity        1.000E+01  mm/s                                 
+       Area:  2.000E+03 mm^2                                                                         
+ ----------------------------------------------------------------------                              
+                                                                                                     
+ Openings                                                                                            
+ --------                                                                                            
+                                                                                                     
+ Number of openings:                                       1                                         
+                                                                                                     
+ Opening                             Type                                                            
+ ----------------------------------------------------------------------                              
+   4 - Pression outlet               Ambient                                                         
+       Area:  2.000E+03 mm^2                                                                         
+ ----------------------------------------------------------------------                              
+                                                                                                     
+ Symmetry Planes                                                                                     
+ ---------------                                                                                     
+                                                                                                     
+ Number of symmetry planes:                                2                                         
+                                                                                                     
+ Sub-domains                                                                                         
+ -----------                                                                                         
+                                                                                                     
+ Sub-domain Elements   Fluid                           Volume                                        
+ ----------------------------------------------------------------------                              
+   1            1176   Gas    : Air                    7.8746E+05 mm^3                               
+ ----------------------------------------------------------------------                              
+                                                                                                     
+ Flow Model Conditions:                                                                              
+ ----------------------                                                                              
+                                                                                                     
+ Total Fluid Volume available for Flow: 7.8746E+05 mm^3                                              
+                                                                                                     
+                                                                                                     
+ Estimated Characteristic Velocities, Lengths and Dimensionless Numbers:                             
+                                                                                                     
+ Sub-domain    Velocity         Length          Reynolds     Mach                                    
+ ----------------------------------------------------------------------                              
+   1- Air      4.8429E+00 mm/s  9.2344E+01 mm   2.9108E+01   1.4115E-05                              
+ ----------------------------------------------------------------------                              
+
+ +--------------------------------------------------------------------+
+ | NX2TMG - WARNING  1717                                             |
+ +--------------------------------------------------------------------+
+ | Enclosure   1 only contains slip walls.                            |
+ | Turbulence model will not be applied in that enclosure.            |
+ +--------------------------------------------------------------------+
+
+                                                                                                     
+ Writing flow model files...                                                                         
+ ...done.                                                                                            
+
+ Executing Flow Solver Only
+
+ FLOW - Flow analysis
+ ======================================================================
+ Time: Wed Mar 14 16:49:10 2018
+
+
+ +--------------------------------------------------------------------+
+ | Solving Flow Model - Elapsed Time: 00 min 01 sec                   |
+ +--------------------------------------------------------------------+
+
+
+
+ +--------------------------------------------------------------------+
+ |                 Initialization Information                         |
+ +--------------------------------------------------------------------+
+
+  Pressure-Gradients array not found in FLI file.
+  Zero initial values will be used.
+
+
+ +--------------------------------------------------------------------+
+ |         Average Scale Information Sub-domain        1              |
+ +--------------------------------------------------------------------+
+
+ Global Length Scale     :                9.234E+01
+ Density Scale           :                1.205E-09
+ Dynamic Viscosity Scale :                1.850E-08
+ Velocity Scale          :                0.000E+00
+ Prandtl Number          :                7.083E-01
+ Cp Scale                :                1.007E+09
+ Conductivity Scale      :                2.630E+01
+
+
+ +--------------------------------------------------------------------+
+ |                       Convergence History                          |
+ +--------------------------------------------------------------------+
+
+ TIME STEP =     1   SIMULATION TIME = 5.00E-01  CPU SECONDS = 4.70E-02
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.00 | 2.7E-02 | 2.0E-01 |     492  |       9.4E-02  OK |
+ | V - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.00 | 1.9E-03 | 1.2E-02 |     460  | 12.6  7.5E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     2   SIMULATION TIME = 1.00E+00  CPU SECONDS = 1.02E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 8.86 | 2.4E-01 | 4.5E-01 |     340  |       6.6E-04  OK |
+ | V - Mom  | 0.00 | 1.7E-02 | 5.1E-02 |    2119  |       9.4E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.43 | 8.1E-04 | 5.1E-03 |     466  |  8.7  3.7E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     3   SIMULATION TIME = 1.50E+00  CPU SECONDS = 1.44E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.83 | 2.0E-01 | 3.2E-01 |     444  |       4.4E-04  OK |
+ | V - Mom  | 0.65 | 1.1E-02 | 3.0E-02 |     123  |       7.3E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.67 | 5.4E-04 | 3.0E-03 |    2541  | 20.4  6.5E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     4   SIMULATION TIME = 2.00E+00  CPU SECONDS = 1.94E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.59 | 1.2E-01 | 1.8E-01 |    1178  |       6.6E-04  OK |
+ | V - Mom  | 0.37 | 4.2E-03 | 1.5E-02 |    1227  |       1.7E-02  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 2.99 | 1.6E-03 | 9.6E-03 |    2507  | 20.4  6.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     5   SIMULATION TIME = 2.50E+00  CPU SECONDS = 2.50E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.39 | 4.7E-02 | 8.8E-02 |    1422  |       2.9E-03  OK |
+ | V - Mom  | 1.04 | 4.4E-03 | 2.2E-02 |    1423  |       2.8E-02  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 2.86 | 4.7E-03 | 2.6E-02 |     199  | 12.7  9.9E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.9143E+00%
+ Flow solver - X Momentum Imbalance             =  4.3258E+00%
+ Flow solver - Y Momentum Imbalance             =  1.4350E-01%
+ Flow solver - Z Momentum Imbalance             =  1.0453E-12%
+
+ TIME STEP =     6   SIMULATION TIME = 3.00E+00  CPU SECONDS = 2.95E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.25 | 1.2E-02 | 3.5E-02 |    1422  |       1.1E-02  OK |
+ | V - Mom  | 0.85 | 3.7E-03 | 2.2E-02 |     476  |       3.8E-02  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.50 | 2.3E-03 | 1.1E-02 |     450  |  8.7  9.8E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     7   SIMULATION TIME = 3.50E+00  CPU SECONDS = 3.41E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 1.57 | 1.8E-02 | 4.2E-02 |    1962  |       2.8E-03  OK |
+ | V - Mom  | 0.75 | 2.8E-03 | 1.7E-02 |     477  |       2.6E-02  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.56 | 1.3E-03 | 7.1E-03 |    1380  |  8.7  6.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     8   SIMULATION TIME = 4.00E+00  CPU SECONDS = 3.83E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 1.39 | 2.5E-02 | 5.0E-02 |     984  |       8.4E-04  OK |
+ | V - Mom  | 0.76 | 2.1E-03 | 1.1E-02 |     477  |       1.2E-02  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.70 | 9.1E-04 | 4.8E-03 |    1380  |  8.7  3.8E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =     9   SIMULATION TIME = 4.50E+00  CPU SECONDS = 4.38E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 2.4E-02 | 4.7E-02 |     984  |       1.7E-03  OK |
+ | V - Mom  | 0.74 | 1.6E-03 | 6.1E-03 |     478  |       2.6E-02  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.91 | 8.3E-04 | 3.7E-03 |    1440  |  8.8  8.7E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    10   SIMULATION TIME = 5.00E+00  CPU SECONDS = 5.13E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.75 | 1.8E-02 | 3.8E-02 |     984  |       1.4E-03  OK |
+ | V - Mom  | 0.76 | 1.2E-03 | 3.4E-03 |    1272  |       1.9E-02  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 1.03 | 8.5E-04 | 3.3E-03 |    1440  | 12.6  8.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  5.1119E-01%
+ Flow solver - X Momentum Imbalance             =  4.3300E+00%
+ Flow solver - Y Momentum Imbalance             =  8.2216E-02%
+ Flow solver - Z Momentum Imbalance             =  2.0407E-13%
+
+ TIME STEP =    11   SIMULATION TIME = 5.50E+00  CPU SECONDS = 5.63E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.54 | 9.9E-03 | 2.7E-02 |     984  |       1.6E-03  OK |
+ | V - Mom  | 0.84 | 1.0E-03 | 2.9E-03 |    1293  |       1.4E-02  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.63 | 5.4E-04 | 2.3E-03 |    2509  | 12.6  8.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    12   SIMULATION TIME = 6.00E+00  CPU SECONDS = 6.07E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.48 | 4.8E-03 | 2.0E-02 |     984  |       1.7E-03  OK |
+ | V - Mom  | 0.92 | 9.3E-04 | 2.7E-03 |    1423  |       8.1E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.61 | 3.3E-04 | 1.6E-03 |     672  | 12.6  6.8E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    13   SIMULATION TIME = 6.50E+00  CPU SECONDS = 6.53E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.62 | 3.0E-03 | 1.5E-02 |     984  |       2.1E-03  OK |
+ | V - Mom  | 0.93 | 8.7E-04 | 2.6E-03 |    2094  |       7.3E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.64 | 2.1E-04 | 9.8E-04 |     494  |  8.8  8.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    14   SIMULATION TIME = 7.00E+00  CPU SECONDS = 6.94E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.93 | 2.8E-03 | 1.3E-02 |     983  |       9.4E-04  OK |
+ | V - Mom  | 0.93 | 8.1E-04 | 2.5E-03 |    2223  |       3.4E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.72 | 1.5E-04 | 6.6E-04 |    2468  |  8.8  4.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    15   SIMULATION TIME = 7.50E+00  CPU SECONDS = 7.35E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 2.8E-03 | 1.2E-02 |     983  |       7.4E-04  OK |
+ | V - Mom  | 0.93 | 7.5E-04 | 2.4E-03 |    1232  |       2.3E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.77 | 1.1E-04 | 5.4E-04 |    2509  |  8.8  4.2E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.8151E-03%
+ Flow solver - X Momentum Imbalance             =  2.6869E+00%
+ Flow solver - Y Momentum Imbalance             =  1.5779E-01%
+ Flow solver - Z Momentum Imbalance             =  1.8355E-12%
+
+ TIME STEP =    16   SIMULATION TIME = 8.00E+00  CPU SECONDS = 7.80E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.94 | 2.6E-03 | 1.1E-02 |     983  |       1.1E-03  OK |
+ | V - Mom  | 0.94 | 7.0E-04 | 2.2E-03 |    1233  |       3.3E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.82 | 9.4E-05 | 5.3E-04 |      32  |  8.8  8.5E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    17   SIMULATION TIME = 8.50E+00  CPU SECONDS = 8.21E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.91 | 2.4E-03 | 1.1E-02 |     983  |       5.9E-04  OK |
+ | V - Mom  | 0.94 | 6.6E-04 | 2.0E-03 |    1233  |       1.7E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.86 | 8.1E-05 | 5.2E-04 |      32  | 12.6  5.6E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    18   SIMULATION TIME = 9.00E+00  CPU SECONDS = 8.69E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.92 | 2.2E-03 | 1.1E-02 |     982  |       8.2E-04  OK |
+ | V - Mom  | 0.95 | 6.3E-04 | 1.9E-03 |    1736  |       2.4E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.88 | 7.1E-05 | 5.0E-04 |      32  |  8.8  9.2E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    19   SIMULATION TIME = 9.50E+00  CPU SECONDS = 9.12E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 2.1E-03 | 1.0E-02 |     982  |       6.3E-04  OK |
+ | V - Mom  | 0.96 | 6.0E-04 | 1.8E-03 |    1736  |       1.9E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.88 | 6.3E-05 | 4.6E-04 |      32  |  8.8  8.7E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    20   SIMULATION TIME = 1.00E+01  CPU SECONDS = 9.55E-01
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 2.0E-03 | 9.8E-03 |    1960  |       4.5E-04  OK |
+ | V - Mom  | 0.96 | 5.8E-04 | 1.7E-03 |    1112  |       1.4E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.88 | 5.5E-05 | 4.1E-04 |      32  |  8.8  7.2E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.3005E-02%
+ Flow solver - X Momentum Imbalance             =  2.0800E-01%
+ Flow solver - Y Momentum Imbalance             =  1.0245E-01%
+ Flow solver - Z Momentum Imbalance             =  3.4173E-13%
+
+ TIME STEP =    21   SIMULATION TIME = 1.05E+01  CPU SECONDS = 1.02E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 2.0E-03 | 9.4E-03 |    1959  |       3.8E-04  OK |
+ | V - Mom  | 0.96 | 5.6E-04 | 1.7E-03 |    1227  |       1.2E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.87 | 4.8E-05 | 3.7E-04 |      32  |  8.8  6.5E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    22   SIMULATION TIME = 1.10E+01  CPU SECONDS = 1.06E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.9E-03 | 9.0E-03 |    1959  |       3.6E-04  OK |
+ | V - Mom  | 0.96 | 5.4E-04 | 1.7E-03 |     800  |       1.2E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.88 | 4.2E-05 | 3.3E-04 |      32  |  8.8  7.3E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    23   SIMULATION TIME = 1.15E+01  CPU SECONDS = 1.11E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.9E-03 | 8.5E-03 |    1959  |       3.5E-04  OK |
+ | V - Mom  | 0.96 | 5.2E-04 | 1.7E-03 |     800  |       1.2E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.88 | 3.7E-05 | 3.0E-04 |      32  |  8.8  8.6E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    24   SIMULATION TIME = 1.20E+01  CPU SECONDS = 1.15E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.9E-03 | 8.2E-03 |    1958  |       3.4E-04  OK |
+ | V - Mom  | 0.96 | 5.0E-04 | 1.6E-03 |     800  |       1.1E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.89 | 3.3E-05 | 2.7E-04 |      32  |  8.8  9.5E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    25   SIMULATION TIME = 1.25E+01  CPU SECONDS = 1.19E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.8E-03 | 7.8E-03 |    1958  |       3.0E-04  OK |
+ | V - Mom  | 0.97 | 4.8E-04 | 1.6E-03 |     800  |       1.1E-03  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.90 | 3.0E-05 | 2.4E-04 |      32  |  8.8  9.9E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Backup files written at time =  1.250000E+01 s
+
+
+ Flow solver - Mass Imbalance                   =  1.1719E-03%
+ Flow solver - X Momentum Imbalance             =  1.1687E-01%
+ Flow solver - Y Momentum Imbalance             =  2.0116E-02%
+ Flow solver - Z Momentum Imbalance             =  5.7129E-13%
+
+ TIME STEP =    26   SIMULATION TIME = 1.30E+01  CPU SECONDS = 1.27E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.8E-03 | 7.4E-03 |    1957  |       8.2E-05  OK |
+ | V - Mom  | 0.97 | 4.7E-04 | 1.5E-03 |     800  |       3.0E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.90 | 2.7E-05 | 2.2E-04 |      32  | 12.7  3.6E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    27   SIMULATION TIME = 1.35E+01  CPU SECONDS = 1.32E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.8E-03 | 7.2E-03 |    1957  |       2.6E-04  OK |
+ | V - Mom  | 0.97 | 4.5E-04 | 1.5E-03 |     800  |       9.5E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.90 | 2.4E-05 | 1.9E-04 |      32  |  8.8  9.7E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    28   SIMULATION TIME = 1.40E+01  CPU SECONDS = 1.36E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.7E-03 | 6.9E-03 |    1957  |       7.8E-05  OK |
+ | V - Mom  | 0.97 | 4.4E-04 | 1.4E-03 |     800  |       2.8E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.91 | 2.2E-05 | 1.7E-04 |      32  | 12.6  3.8E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    29   SIMULATION TIME = 1.45E+01  CPU SECONDS = 1.41E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.7E-03 | 6.6E-03 |    1956  |       7.1E-05  OK |
+ | V - Mom  | 0.97 | 4.2E-04 | 1.4E-03 |     800  |       2.6E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.91 | 2.0E-05 | 1.6E-04 |      32  | 12.6  3.7E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    30   SIMULATION TIME = 1.50E+01  CPU SECONDS = 1.46E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.7E-03 | 6.4E-03 |    1956  |       7.0E-05  OK |
+ | V - Mom  | 0.97 | 4.1E-04 | 1.3E-03 |     800  |       2.6E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.91 | 1.8E-05 | 1.4E-04 |      32  | 12.6  3.8E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  4.5032E-04%
+ Flow solver - X Momentum Imbalance             =  3.0248E-01%
+ Flow solver - Y Momentum Imbalance             =  2.6302E-03%
+ Flow solver - Z Momentum Imbalance             =  1.5602E-12%
+
+ TIME STEP =    31   SIMULATION TIME = 1.55E+01  CPU SECONDS = 1.50E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.6E-03 | 6.1E-03 |    1956  |       7.0E-05  OK |
+ | V - Mom  | 0.97 | 4.0E-04 | 1.3E-03 |     800  |       2.6E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.92 | 1.7E-05 | 1.3E-04 |      32  | 12.6  4.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    32   SIMULATION TIME = 1.60E+01  CPU SECONDS = 1.55E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.6E-03 | 5.9E-03 |    1955  |       7.0E-05  OK |
+ | V - Mom  | 0.97 | 3.8E-04 | 1.2E-03 |     800  |       2.7E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.92 | 1.5E-05 | 1.2E-04 |      32  | 12.6  4.3E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    33   SIMULATION TIME = 1.65E+01  CPU SECONDS = 1.60E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.6E-03 | 5.7E-03 |    1955  |       7.0E-05  OK |
+ | V - Mom  | 0.97 | 3.7E-04 | 1.2E-03 |     800  |       2.7E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.92 | 1.4E-05 | 1.1E-04 |      32  | 12.6  4.5E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    34   SIMULATION TIME = 1.70E+01  CPU SECONDS = 1.64E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.6E-03 | 5.5E-03 |    1955  |       7.0E-05  OK |
+ | V - Mom  | 0.97 | 3.6E-04 | 1.1E-03 |     794  |       2.8E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.92 | 1.3E-05 | 1.0E-04 |      32  | 12.6  4.6E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    35   SIMULATION TIME = 1.75E+01  CPU SECONDS = 1.69E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.5E-03 | 5.4E-03 |    1954  |       6.9E-05  OK |
+ | V - Mom  | 0.97 | 3.5E-04 | 1.1E-03 |     794  |       2.8E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.92 | 1.2E-05 | 9.1E-05 |      32  | 12.6  4.8E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  2.8474E-04%
+ Flow solver - X Momentum Imbalance             =  2.4200E-01%
+ Flow solver - Y Momentum Imbalance             =  2.3349E-03%
+ Flow solver - Z Momentum Imbalance             =  7.5258E-13%
+
+ TIME STEP =    36   SIMULATION TIME = 1.80E+01  CPU SECONDS = 1.73E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.5E-03 | 5.2E-03 |    1954  |       6.9E-05  OK |
+ | V - Mom  | 0.97 | 3.4E-04 | 1.0E-03 |     794  |       2.8E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.92 | 1.1E-05 | 8.4E-05 |      32  | 12.6  5.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    37   SIMULATION TIME = 1.85E+01  CPU SECONDS = 1.78E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.5E-03 | 5.0E-03 |    1954  |       6.8E-05  OK |
+ | V - Mom  | 0.97 | 3.3E-04 | 1.0E-03 |     788  |       2.9E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.92 | 1.0E-05 | 7.7E-05 |      32  | 12.6  5.2E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    38   SIMULATION TIME = 1.90E+01  CPU SECONDS = 1.83E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.5E-03 | 4.9E-03 |    1953  |       6.8E-05  OK |
+ | V - Mom  | 0.97 | 3.2E-04 | 9.7E-04 |     788  |       2.9E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.92 | 9.3E-06 | 7.0E-05 |      32  | 12.6  5.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    39   SIMULATION TIME = 1.95E+01  CPU SECONDS = 1.87E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.4E-03 | 4.8E-03 |    1953  |       6.7E-05  OK |
+ | V - Mom  | 0.97 | 3.1E-04 | 9.3E-04 |     788  |       2.9E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.93 | 8.6E-06 | 6.4E-05 |      32  | 12.6  5.5E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    40   SIMULATION TIME = 2.00E+01  CPU SECONDS = 1.92E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.4E-03 | 4.6E-03 |    1952  |       6.7E-05  OK |
+ | V - Mom  | 0.96 | 2.9E-04 | 9.0E-04 |     782  |       3.0E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.93 | 8.0E-06 | 5.9E-05 |      32  | 12.6  5.7E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  2.1157E-04%
+ Flow solver - X Momentum Imbalance             =  2.3017E-01%
+ Flow solver - Y Momentum Imbalance             =  8.4488E-04%
+ Flow solver - Z Momentum Imbalance             =  8.1022E-14%
+
+ TIME STEP =    41   SIMULATION TIME = 2.05E+01  CPU SECONDS = 1.97E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.4E-03 | 4.5E-03 |    1952  |       6.6E-05  OK |
+ | V - Mom  | 0.96 | 2.8E-04 | 8.8E-04 |     782  |       3.0E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.93 | 7.4E-06 | 5.4E-05 |      32  | 12.6  5.9E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    42   SIMULATION TIME = 2.10E+01  CPU SECONDS = 2.02E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.4E-03 | 4.4E-03 |    1952  |       6.6E-05  OK |
+ | V - Mom  | 0.96 | 2.7E-04 | 8.5E-04 |     782  |       3.0E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.93 | 6.9E-06 | 5.0E-05 |      32  | 12.6  6.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    43   SIMULATION TIME = 2.15E+01  CPU SECONDS = 2.06E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.3E-03 | 4.3E-03 |    1951  |       6.5E-05  OK |
+ | V - Mom  | 0.96 | 2.6E-04 | 8.2E-04 |     776  |       3.1E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.93 | 6.4E-06 | 4.6E-05 |      32  | 12.6  6.2E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    44   SIMULATION TIME = 2.20E+01  CPU SECONDS = 2.11E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.3E-03 | 4.1E-03 |    1951  |       6.4E-05  OK |
+ | V - Mom  | 0.96 | 2.5E-04 | 8.0E-04 |     776  |       3.1E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.93 | 6.0E-06 | 4.3E-05 |      32  | 12.6  6.3E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    45   SIMULATION TIME = 2.25E+01  CPU SECONDS = 2.15E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.3E-03 | 4.0E-03 |    1951  |       6.4E-05  OK |
+ | V - Mom  | 0.96 | 2.4E-04 | 7.8E-04 |     776  |       3.1E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.93 | 5.6E-06 | 3.9E-05 |      32  | 12.6  6.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.3598E-04%
+ Flow solver - X Momentum Imbalance             =  2.1054E-01%
+ Flow solver - Y Momentum Imbalance             =  3.1160E-03%
+ Flow solver - Z Momentum Imbalance             =  3.5996E-12%
+
+ TIME STEP =    46   SIMULATION TIME = 2.30E+01  CPU SECONDS = 2.20E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.3E-03 | 3.9E-03 |    1950  |       6.3E-05  OK |
+ | V - Mom  | 0.96 | 2.3E-04 | 7.5E-04 |     770  |       3.2E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 5.2E-06 | 3.6E-05 |      32  | 12.6  6.6E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    47   SIMULATION TIME = 2.35E+01  CPU SECONDS = 2.25E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.2E-03 | 3.8E-03 |    1950  |       6.3E-05  OK |
+ | V - Mom  | 0.96 | 2.3E-04 | 7.3E-04 |     770  |       3.2E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 4.9E-06 | 3.3E-05 |      32  | 12.6  6.7E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    48   SIMULATION TIME = 2.40E+01  CPU SECONDS = 2.31E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.2E-03 | 3.7E-03 |    1949  |       6.2E-05  OK |
+ | V - Mom  | 0.96 | 2.2E-04 | 7.1E-04 |     770  |       3.2E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 4.6E-06 | 3.1E-05 |      32  | 12.6  6.7E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    49   SIMULATION TIME = 2.45E+01  CPU SECONDS = 2.36E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.2E-03 | 3.7E-03 |    1949  |       6.1E-05  OK |
+ | V - Mom  | 0.96 | 2.1E-04 | 6.9E-04 |     770  |       3.3E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 4.3E-06 | 2.8E-05 |      32  | 12.6  6.8E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    50   SIMULATION TIME = 2.50E+01  CPU SECONDS = 2.41E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.2E-03 | 3.6E-03 |    1949  |       6.1E-05  OK |
+ | V - Mom  | 0.96 | 2.0E-04 | 6.8E-04 |     764  |       3.3E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 4.1E-06 | 2.6E-05 |      32  | 12.6  6.9E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Backup files written at time =  2.500000E+01 s
+
+
+ Flow solver - Mass Imbalance                   =  5.5982E-05%
+ Flow solver - X Momentum Imbalance             =  1.8618E-01%
+ Flow solver - Y Momentum Imbalance             =  6.7338E-03%
+ Flow solver - Z Momentum Imbalance             =  8.8679E-13%
+
+ TIME STEP =    51   SIMULATION TIME = 2.55E+01  CPU SECONDS = 2.49E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.1E-03 | 3.5E-03 |    1948  |       6.0E-05  OK |
+ | V - Mom  | 0.97 | 1.9E-04 | 6.6E-04 |     764  |       3.3E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 3.8E-06 | 2.4E-05 |      32  | 12.6  6.9E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    52   SIMULATION TIME = 2.60E+01  CPU SECONDS = 2.54E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.1E-03 | 3.4E-03 |    1948  |       6.0E-05  OK |
+ | V - Mom  | 0.97 | 1.9E-04 | 6.4E-04 |     764  |       3.3E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 3.6E-06 | 2.2E-05 |      32  | 12.6  7.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    53   SIMULATION TIME = 2.65E+01  CPU SECONDS = 2.58E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.1E-03 | 3.3E-03 |    1948  |       5.9E-05  OK |
+ | V - Mom  | 0.97 | 1.8E-04 | 6.3E-04 |     758  |       3.3E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 3.4E-06 | 2.1E-05 |      32  | 12.6  7.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    54   SIMULATION TIME = 2.70E+01  CPU SECONDS = 2.63E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.98 | 1.1E-03 | 3.3E-03 |    1947  |       5.8E-05  OK |
+ | V - Mom  | 0.97 | 1.8E-04 | 6.1E-04 |     758  |       3.2E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.93 | 3.2E-06 | 1.9E-05 |     159  | 12.6  7.3E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    55   SIMULATION TIME = 2.75E+01  CPU SECONDS = 2.67E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 1.0E-03 | 3.2E-03 |    1947  |       5.8E-05  OK |
+ | V - Mom  | 0.97 | 1.7E-04 | 6.0E-04 |     758  |       3.2E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 3.0E-06 | 1.8E-05 |     159  | 12.6  7.3E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.2793E-05%
+ Flow solver - X Momentum Imbalance             =  1.5987E-01%
+ Flow solver - Y Momentum Imbalance             =  9.9680E-03%
+ Flow solver - Z Momentum Imbalance             =  3.4407E-12%
+
+ TIME STEP =    56   SIMULATION TIME = 2.80E+01  CPU SECONDS = 2.72E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 1.0E-03 | 3.1E-03 |    1946  |       5.7E-05  OK |
+ | V - Mom  | 0.97 | 1.7E-04 | 5.8E-04 |     752  |       3.2E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 2.8E-06 | 1.7E-05 |     159  | 12.6  7.3E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    57   SIMULATION TIME = 2.85E+01  CPU SECONDS = 2.78E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 9.8E-04 | 3.1E-03 |    1946  |       5.7E-05  OK |
+ | V - Mom  | 0.97 | 1.6E-04 | 5.7E-04 |     752  |       3.2E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 2.6E-06 | 1.5E-05 |     159  | 12.6  7.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    58   SIMULATION TIME = 2.90E+01  CPU SECONDS = 2.85E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 9.5E-04 | 3.0E-03 |    1946  |       5.6E-05  OK |
+ | V - Mom  | 0.98 | 1.6E-04 | 5.6E-04 |     752  |       3.1E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 2.5E-06 | 1.4E-05 |     159  | 12.6  7.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    59   SIMULATION TIME = 2.95E+01  CPU SECONDS = 2.89E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 9.3E-04 | 3.0E-03 |    1945  |       5.6E-05  OK |
+ | V - Mom  | 0.98 | 1.6E-04 | 5.5E-04 |     746  |       3.1E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 2.3E-06 | 1.3E-05 |     159  | 12.6  7.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    60   SIMULATION TIME = 3.00E+01  CPU SECONDS = 2.94E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 9.0E-04 | 2.9E-03 |    1945  |       5.5E-05  OK |
+ | V - Mom  | 0.98 | 1.5E-04 | 5.3E-04 |     746  |       3.0E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 2.2E-06 | 1.2E-05 |     159  | 12.6  7.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  8.6476E-05%
+ Flow solver - X Momentum Imbalance             =  1.3141E-01%
+ Flow solver - Y Momentum Imbalance             =  1.1409E-02%
+ Flow solver - Z Momentum Imbalance             =  1.0094E-12%
+
+ TIME STEP =    61   SIMULATION TIME = 3.05E+01  CPU SECONDS = 2.99E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 8.7E-04 | 2.9E-03 |    1944  |       5.5E-05  OK |
+ | V - Mom  | 0.98 | 1.5E-04 | 5.2E-04 |     746  |       2.9E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 2.1E-06 | 1.2E-05 |     159  | 12.6  7.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    62   SIMULATION TIME = 3.10E+01  CPU SECONDS = 3.03E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 8.4E-04 | 2.8E-03 |    1944  |       5.4E-05  OK |
+ | V - Mom  | 0.98 | 1.5E-04 | 5.1E-04 |     740  |       2.9E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.94 | 2.0E-06 | 1.1E-05 |     159  | 12.6  7.3E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    63   SIMULATION TIME = 3.15E+01  CPU SECONDS = 3.08E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 8.2E-04 | 2.8E-03 |    1944  |       5.4E-05  OK |
+ | V - Mom  | 0.98 | 1.4E-04 | 5.0E-04 |     740  |       2.8E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.95 | 1.9E-06 | 1.0E-05 |     159  | 12.6  7.3E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    64   SIMULATION TIME = 3.20E+01  CPU SECONDS = 3.13E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 7.9E-04 | 2.7E-03 |    1944  |       5.3E-05  OK |
+ | V - Mom  | 0.98 | 1.4E-04 | 4.9E-04 |     740  |       2.7E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.95 | 1.8E-06 | 9.3E-06 |     159  | 12.6  7.2E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    65   SIMULATION TIME = 3.25E+01  CPU SECONDS = 3.17E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.97 | 7.6E-04 | 2.6E-03 |    1944  |       5.3E-05  OK |
+ | V - Mom  | 0.98 | 1.4E-04 | 4.8E-04 |     734  |       2.7E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.95 | 1.7E-06 | 8.6E-06 |     159  | 12.6  7.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.3948E-04%
+ Flow solver - X Momentum Imbalance             =  1.0636E-01%
+ Flow solver - Y Momentum Imbalance             =  1.0480E-02%
+ Flow solver - Z Momentum Imbalance             =  6.1822E-13%
+
+ TIME STEP =    66   SIMULATION TIME = 3.30E+01  CPU SECONDS = 3.22E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 7.3E-04 | 2.6E-03 |    1944  |       5.3E-05  OK |
+ | V - Mom  | 0.98 | 1.4E-04 | 4.7E-04 |     734  |       2.6E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.95 | 1.6E-06 | 8.0E-06 |     159  | 12.6  7.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    67   SIMULATION TIME = 3.35E+01  CPU SECONDS = 3.27E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 7.1E-04 | 2.5E-03 |    1944  |       5.2E-05  OK |
+ | V - Mom  | 0.98 | 1.3E-04 | 4.6E-04 |     734  |       2.5E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.95 | 1.5E-06 | 7.5E-06 |     159  | 12.6  6.9E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    68   SIMULATION TIME = 3.40E+01  CPU SECONDS = 3.33E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 6.8E-04 | 2.5E-03 |    1790  |       5.2E-05  OK |
+ | V - Mom  | 0.98 | 1.3E-04 | 4.5E-04 |     728  |       2.5E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.96 | 1.4E-06 | 7.0E-06 |     159  | 12.6  6.8E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    69   SIMULATION TIME = 3.45E+01  CPU SECONDS = 3.38E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 6.6E-04 | 2.4E-03 |    1790  |       5.2E-05  OK |
+ | V - Mom  | 0.98 | 1.3E-04 | 4.4E-04 |     728  |       2.4E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.96 | 1.4E-06 | 6.5E-06 |     159  | 12.6  6.7E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    70   SIMULATION TIME = 3.50E+01  CPU SECONDS = 3.43E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 6.3E-04 | 2.3E-03 |    1790  |       5.2E-05  OK |
+ | V - Mom  | 0.98 | 1.3E-04 | 4.3E-04 |     728  |       2.4E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.96 | 1.3E-06 | 6.0E-06 |     159  | 12.6  6.6E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.6865E-04%
+ Flow solver - X Momentum Imbalance             =  8.4475E-02%
+ Flow solver - Y Momentum Imbalance             =  7.4766E-03%
+ Flow solver - Z Momentum Imbalance             =  2.3505E-12%
+
+ TIME STEP =    71   SIMULATION TIME = 3.55E+01  CPU SECONDS = 3.47E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 6.1E-04 | 2.3E-03 |    1790  |       5.1E-05  OK |
+ | V - Mom  | 0.98 | 1.3E-04 | 4.3E-04 |     722  |       2.3E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.96 | 1.3E-06 | 5.6E-06 |    1711  | 12.6  6.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    72   SIMULATION TIME = 3.60E+01  CPU SECONDS = 3.52E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 5.8E-04 | 2.2E-03 |    1790  |       5.1E-05  OK |
+ | V - Mom  | 0.98 | 1.2E-04 | 4.2E-04 |     722  |       2.2E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 1.2E-06 | 5.5E-06 |    1711  | 12.6  6.3E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    73   SIMULATION TIME = 3.65E+01  CPU SECONDS = 3.57E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 5.6E-04 | 2.2E-03 |    1790  |       5.1E-05  OK |
+ | V - Mom  | 0.98 | 1.2E-04 | 4.1E-04 |     722  |       2.2E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 1.2E-06 | 5.4E-06 |    1705  | 12.6  6.2E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    74   SIMULATION TIME = 3.70E+01  CPU SECONDS = 3.61E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 5.3E-04 | 2.1E-03 |    1790  |       5.1E-05  OK |
+ | V - Mom  | 0.98 | 1.2E-04 | 4.0E-04 |     716  |       2.1E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 1.2E-06 | 5.9E-06 |     851  | 12.6  6.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    75   SIMULATION TIME = 3.75E+01  CPU SECONDS = 3.65E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 5.1E-04 | 2.0E-03 |    1790  |       5.1E-05  OK |
+ | V - Mom  | 0.98 | 1.1E-04 | 4.0E-04 |     716  |       2.1E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 1.1E-06 | 6.6E-06 |     851  | 12.6  5.9E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Backup files written at time =  3.750000E+01 s
+
+
+ Flow solver - Mass Imbalance                   =  1.7656E-04%
+ Flow solver - X Momentum Imbalance             =  6.6061E-02%
+ Flow solver - Y Momentum Imbalance             =  3.2990E-03%
+ Flow solver - Z Momentum Imbalance             =  3.4608E-13%
+
+ TIME STEP =    76   SIMULATION TIME = 3.80E+01  CPU SECONDS = 3.74E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 4.9E-04 | 2.0E-03 |    1790  |       5.1E-05  OK |
+ | V - Mom  | 0.98 | 1.1E-04 | 3.9E-04 |     716  |       2.0E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 1.1E-06 | 7.2E-06 |     851  | 12.6  5.8E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    77   SIMULATION TIME = 3.85E+01  CPU SECONDS = 3.79E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.96 | 4.7E-04 | 1.9E-03 |    1790  |       5.1E-05  OK |
+ | V - Mom  | 0.97 | 1.1E-04 | 3.8E-04 |     710  |       2.0E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.98 | 1.1E-06 | 7.8E-06 |     851  | 12.6  5.6E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    78   SIMULATION TIME = 3.90E+01  CPU SECONDS = 3.86E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 4.5E-04 | 1.8E-03 |    1790  |       5.1E-05  OK |
+ | V - Mom  | 0.97 | 1.1E-04 | 3.7E-04 |     710  |       2.0E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.98 | 1.0E-06 | 8.3E-06 |     851  | 12.6  5.5E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    79   SIMULATION TIME = 3.95E+01  CPU SECONDS = 3.90E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 4.2E-04 | 1.8E-03 |    1790  |       5.1E-05  OK |
+ | V - Mom  | 0.97 | 1.0E-04 | 3.7E-04 |     710  |       1.9E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.98 | 1.0E-06 | 8.7E-06 |     851  | 12.6  5.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    80   SIMULATION TIME = 4.00E+01  CPU SECONDS = 3.95E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 4.0E-04 | 1.7E-03 |    1790  |       5.1E-05  OK |
+ | V - Mom  | 0.97 | 1.0E-04 | 3.6E-04 |     704  |       1.9E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.98 | 1.0E-06 | 9.1E-06 |     851  | 12.6  5.2E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.6829E-04%
+ Flow solver - X Momentum Imbalance             =  5.1056E-02%
+ Flow solver - Y Momentum Imbalance             =  9.9616E-04%
+ Flow solver - Z Momentum Imbalance             =  8.3305E-13%
+
+ TIME STEP =    81   SIMULATION TIME = 4.05E+01  CPU SECONDS = 3.99E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 3.9E-04 | 1.6E-03 |    1790  |       5.0E-05  OK |
+ | V - Mom  | 0.97 | 9.7E-05 | 3.5E-04 |     704  |       1.8E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.98 | 9.8E-07 | 9.4E-06 |     851  | 12.6  5.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    82   SIMULATION TIME = 4.10E+01  CPU SECONDS = 4.04E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 3.7E-04 | 1.6E-03 |    1790  |       5.0E-05  OK |
+ | V - Mom  | 0.97 | 9.4E-05 | 3.4E-04 |     704  |       1.8E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.98 | 9.6E-07 | 9.7E-06 |     851  | 12.6  5.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    83   SIMULATION TIME = 4.15E+01  CPU SECONDS = 4.09E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 3.5E-04 | 1.5E-03 |    1790  |       5.0E-05  OK |
+ | V - Mom  | 0.97 | 9.1E-05 | 3.4E-04 |     698  |       1.8E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.98 | 9.3E-07 | 9.9E-06 |     851  | 12.6  4.9E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    84   SIMULATION TIME = 4.20E+01  CPU SECONDS = 4.13E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 3.3E-04 | 1.4E-03 |    2261  |       5.0E-05  OK |
+ | V - Mom  | 0.97 | 8.8E-05 | 3.3E-04 |     698  |       1.8E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.98 | 9.1E-07 | 1.0E-05 |     851  | 12.6  4.8E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    85   SIMULATION TIME = 4.25E+01  CPU SECONDS = 4.18E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 3.1E-04 | 1.4E-03 |    2261  |       5.0E-05  OK |
+ | V - Mom  | 0.97 | 8.5E-05 | 3.2E-04 |     698  |       1.7E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.98 | 8.9E-07 | 1.0E-05 |     851  | 12.6  4.7E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.4989E-04%
+ Flow solver - X Momentum Imbalance             =  3.9095E-02%
+ Flow solver - Y Momentum Imbalance             =  4.5343E-03%
+ Flow solver - Z Momentum Imbalance             =  1.6495E-12%
+
+ TIME STEP =    86   SIMULATION TIME = 4.30E+01  CPU SECONDS = 4.22E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 3.0E-04 | 1.3E-03 |    2261  |       5.0E-05  OK |
+ | V - Mom  | 0.96 | 8.2E-05 | 3.2E-04 |    1670  |       1.7E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.98 | 8.7E-07 | 1.0E-05 |     851  | 12.6  4.6E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    87   SIMULATION TIME = 4.35E+01  CPU SECONDS = 4.27E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 2.8E-04 | 1.2E-03 |    2261  |       5.0E-05  OK |
+ | V - Mom  | 0.96 | 7.9E-05 | 3.1E-04 |    1670  |       1.7E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 8.5E-07 | 1.0E-05 |     851  | 12.6  4.5E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    88   SIMULATION TIME = 4.40E+01  CPU SECONDS = 4.32E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 2.7E-04 | 1.2E-03 |    2261  |       5.1E-05  OK |
+ | V - Mom  | 0.96 | 7.6E-05 | 3.1E-04 |    1670  |       1.6E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 8.2E-07 | 1.0E-05 |     851  | 12.6  4.4E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    89   SIMULATION TIME = 4.45E+01  CPU SECONDS = 4.36E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 2.5E-04 | 1.1E-03 |    2261  |       5.1E-05  OK |
+ | V - Mom  | 0.96 | 7.3E-05 | 3.0E-04 |    1670  |       1.6E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 8.0E-07 | 1.0E-05 |     851  | 12.6  4.3E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    90   SIMULATION TIME = 4.50E+01  CPU SECONDS = 4.41E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 2.4E-04 | 1.1E-03 |    2261  |       5.1E-05  OK |
+ | V - Mom  | 0.96 | 7.0E-05 | 2.9E-04 |    1670  |       1.6E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 7.8E-07 | 1.0E-05 |     851  | 12.6  4.2E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ Flow solver - Mass Imbalance                   =  1.2679E-04%
+ Flow solver - X Momentum Imbalance             =  2.9702E-02%
+ Flow solver - Y Momentum Imbalance             =  6.8027E-03%
+ Flow solver - Z Momentum Imbalance             =  2.0345E-12%
+
+ TIME STEP =    91   SIMULATION TIME = 4.55E+01  CPU SECONDS = 4.46E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 2.3E-04 | 1.0E-03 |    2261  |       5.1E-05  OK |
+ | V - Mom  | 0.96 | 6.7E-05 | 2.8E-04 |    1670  |       1.6E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 7.6E-07 | 9.8E-06 |     851  | 12.6  4.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    92   SIMULATION TIME = 4.60E+01  CPU SECONDS = 4.51E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 2.2E-04 | 9.7E-04 |    2261  |       5.1E-05  OK |
+ | V - Mom  | 0.96 | 6.4E-05 | 2.7E-04 |    1670  |       1.6E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 7.3E-07 | 9.7E-06 |     851  | 12.6  4.1E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    93   SIMULATION TIME = 4.65E+01  CPU SECONDS = 4.55E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.95 | 2.0E-04 | 9.2E-04 |    2261  |       5.1E-05  OK |
+ | V - Mom  | 0.96 | 6.1E-05 | 2.6E-04 |    1670  |       1.5E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 7.1E-07 | 9.5E-06 |     851  | 12.6  4.0E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+ TIME STEP =    94   SIMULATION TIME = 4.70E+01  CPU SECONDS = 4.59E+00
+ +----------+------+---------+---------+----------+-------------------+
+ | Equation | Rate | RMS Res | Max Res | Location |  Linear Solution  |
+ +----------+------+---------+---------+----------+-------------------+
+ | U - Mom  | 0.94 | 1.9E-04 | 8.7E-04 |    2261  |       5.1E-05  OK |
+ | V - Mom  | 0.96 | 5.9E-05 | 2.5E-04 |    1670  |       1.5E-04  OK |
+ | W - Mom  | 0.00 | 0.0E+00 | 0.0E+00 |       0  |       0.0E+00  OK |
+ | P - Mass | 0.97 | 6.9E-07 | 9.3E-06 |     851  | 12.6  3.9E-02  OK |
+ +----------+------+---------+---------+----------+-------------------+
+
+
+Execution terminating:
+    all RMS residual AND global imbalance
+    are below their target criteria.
+
+
+
+
+ +--------------------------------------------------------------------+
+ |         Boundary Mass Flow and Total Source Term Summary           |
+ +--------------------------------------------------------------------+
+ SLIPADIABATIC FACES                      0.0000E+00
+ INLET _FAN 3_Vitesse initiale            2.4093E-05
+ OPENING 4_Pression outlet               -2.4093E-05
+ OPEN_HEXAHEDRAL_ELEMENTS                 0.0000E+00
+                                         -----------
+ Global Mass Balance:                     2.5946E-11
+
+ Global Imbalance, in %:                    0.0001 %
+ 
+
+
+ +--------------------------------------------------------------------+
+ |        Boundary Momentum Flow and Total Source Term Summary        |
+ +--------------------------------------------------------------------+
+                                     X-Comp.      Y-Comp.      Z-Comp.
+ SLIPADIABATIC FACES              -4.2432E-05   5.4652E-09  -5.5257E-13
+ INLET _FAN 3_Vitesse initiale     2.8735E-04   1.5436E-12   0.0000E+00
+ OPENING 4_Pression outlet        -2.4485E-04   1.6391E-08   9.2172E-13
+ SYMMETRY   1_Symmetry Plane(1)    0.0000E+00   0.0000E+00  -1.2729E-04
+ SYMMETRY   2_Symmetry Plane(2)    0.0000E+00   0.0000E+00   1.2729E-04
+ OPEN_HEXAHEDRAL_ELEMENTS          0.0000E+00   0.0000E+00   0.0000E+00
+                                  -----------  -----------  -----------
+ Global Momentum Balance:          6.8147E-08   2.1858E-08   8.9447E-19
+
+ Global Imbalance, in %:             0.0237 %     0.0076 %     0.0000 %
+ 
+
+
+
+ +--------------------------------------------------------------------+
+ |                 Locations of maximum residuals                     |
+ +--------------------------------------------------------------------+
+ | Equation  |    Node #   |      X      |      Y      |       Z      |
+ +--------------------------------------------------------------------+
+ | U - Mom   |      2261   |  2.680E+02  |  1.000E+02  |  0.000E+00   |
+ | V - Mom   |      1670   |  2.680E+02  | -4.857E+01  |  0.000E+00   |
+ | W - Mom   |         0   |  0.000E+00  |  0.000E+00  |  0.000E+00   |
+ | P - Mass  |       851   |  2.800E+02  | -1.000E+02  |  1.000E+01   |
+ +--------------------------------------------------------------------+
+
+
+ +--------------------------------------------------------------------+
+ |                 Peak Values of residuals                           |
+ +--------------------------------------------------------------------+
+ | Equation  |Peak occur at loop # | Peak Residual  | Final Residual  |
+ +--------------------------------------------------------------------+
+ | U - Mom   |            2        |  2.41636E-01   |  1.92479E-04    |
+ | V - Mom   |            2        |  1.74325E-02   |  5.87698E-05    |
+ | W - Mom   |            1        |  0.00000E+00   |  0.00000E+00    |
+ | P - Mass  |            5        |  4.65737E-03   |  6.85731E-07    |
+ +--------------------------------------------------------------------+
+
+
+ +--------------------------------------------------------------------+
+ |         Average Scale Information Sub-domain        1              |
+ +--------------------------------------------------------------------+
+
+ Global Length Scale     :                9.234E+01
+ Density Scale           :                1.205E-09
+ Dynamic Viscosity Scale :                1.850E-08
+ Advection Time Scale    :                9.317E+00
+ Reynolds Number         :                5.960E+01
+ Velocity Scale          :                9.911E+00
+ Prandtl Number          :                7.083E-01
+ Cp Scale                :                1.007E+09
+ Conductivity Scale      :                2.630E+01
+
+
+ +--------------------------------------------------------------------+
+ |                 CPU Requirements of Numerical Solution             |
+ +--------------------------------------------------------------------+
+
+ Equation Type       Discretization       Linear Solution
+                     (secs. %total)       (secs. %total) 
+ --------------------------------------------------------
+ Momentum-Mass       2.54E+00  65.9 %     1.32E+00  34.1 %
+
+
+ +--------------------------------------------------------------------+
+ |                     Memory Usage Information                       |
+ +--------------------------------------------------------------------+
+ |      Peak Memory Use:           5465 Kb                            |
+ |     Shared Workspace:         258545 words                         |
+ +--------------------------------------------------------------------+
+
+ ESCRR - Convert analysis results
+ ======================================================================
+ Time: Wed Mar 14 16:49:16 2018
+
+ +--------------------------------------------------------------------+                              
+ |                          Results Recovery                          |                              
+ +--------------------------------------------------------------------+                              
+                                                                                                     
+ Recovering Velocity                                                                                 
+ Recovering Pressure                                                                                 
+ Recovering Temperature                                                                              
+                                                                                                     
+ Reading fluid flow results...                                                                       
+ Reading thermal results...                                                                          
+ Writing results data...                                                                             
+ 
+ 
+ +--------------------------------------------------------------------+                              
+ |                          Solution Summary                          |                              
+ +--------------------------------------------------------------------+                              
+                                                                                                     
+                                                                                                     
+ Results Summary       Maximum       Minimum       Average                                           
+ ----------------------------------------------------------------------                              
+ Fluid Temperature     2.000E+01     2.000E+01     2.000E+01 C                                       
+           at node             1             1                                                       
+ Fluid Velocity        1.380E+01     6.369E-03     9.911E+00 mm/s                                    
+           at node           194            82                                                       
+ Fluid Pressure        1.192E-07    -1.245E-07    -2.200E-09 mN/mm^2                                 
+           at node           258            29                                                       
+ ----------------------------------------------------------------------                              
+                                                                                                     
+                                                                                                     
+ Volume/Mass Flow Summary                                                                            
+ (Values > 0 are inflows)     Volume Flow          Mass Flow                                         
+ ----------------------------------------------------------------------                              
+ Vitesse initiale             2.000E+04 mm^3/s     2.409E-05 kg/s                                    
+ Pression outlet             -2.000E+04 mm^3/s    -2.409E-05 kg/s                                    
+ ----------------------------------------------------------------------                              
+                                                                                                     
+                                                                                                     
+ Forces at CG                                                                                        
+ of Flow Surfaces            x-comp     y-comp     z-comp     |R|                                    
+ ----------------------------------------------------------------------                              
+ Slip lateral wall                                                                                   
+  CG location (mm):          0.000E+00  0.000E+00  0.000E+00                                         
+  CP location (mm):          0.000E+00  0.000E+00  0.000E+00                                         
+  Total Force (mN):          0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+  Total Torque (mN-mm):      0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+  Shear Force (mN):          0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+  Shear Torque (mN-mm):      0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+  Pressure Force (mN):       0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+  Pressure Torque (mN-mm):   0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+ No slip wall                                                                                        
+  CG location (mm):          0.000E+00  0.000E+00  0.000E+00                                         
+  CP location (mm):          0.000E+00  0.000E+00  0.000E+00                                         
+  Total Force (mN):          0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+  Total Torque (mN-mm):      0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+  Shear Force (mN):          0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+  Shear Torque (mN-mm):      0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+  Pressure Force (mN):       0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+  Pressure Torque (mN-mm):   0.000E+00  0.000E+00  0.000E+00  0.000E+00                              
+ ----------------------------------------------------------------------                              
+                                                                                                     
+                                                                                                     
+ Solver Convergence                                                                                  
+ ----------------------------------------------------------------------                              
+ Flow solver - Momentum imbalance                  2.372E-02 Percent                                 
+ Flow solver - Mass imbalance                      1.077E-04 Percent                                 
+ Flow solver - Energy imbalance                    0.000E+00 Percent                                 
+ ----------------------------------------------------------------------                              
+                                                                                                     
+
+ ESCRR - Process Fluid Reports
+ ======================================================================
+ Time: Wed Mar 14 16:49:17 2018
+
+
+ TRR2HTM - Report converter
+ ======================================================================
+ Time: Wed Mar 14 16:49:18 2018
+
+  Processing report data...
+   File "GroupReport_Index.js" successfully created
+   File "GroupReport.htm" successfully created
+  ...done
+
+
+
+ +--------------------------------------------------------------------+
+ |                                END                                 |
+ +--------------------------------------------------------------------+
+
+ Solution elapsed time: 00 min 14 sec

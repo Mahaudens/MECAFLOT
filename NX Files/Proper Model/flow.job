@@ -5,15 +5,15 @@ CFD Summary Information
         -1
         -1
 termination_criterion                    =          0
-number_of_iterations                     =         45
-u_momentum_residual_rms                  =   1.980782412207E-04
-v_momentum_residual_rms                  =   4.248786424905E-05
-w_momentum_residual_rms                  =   2.125822775857E-05
-mass_residual_rms                        =   2.378708579849E-07
-u_momentum_imbalance                     =   1.838130355488E-06
-v_momentum_imbalance                     =   3.779801934823E-07
-w_momentum_imbalance                     =   1.182803495643E-08
-mass_imbalance                           =   1.754835186111E-07
+number_of_iterations                     =        101
+u_momentum_residual_rms                  =   1.984533670821E-04
+v_momentum_residual_rms                  =   3.711550112519E-05
+w_momentum_residual_rms                  =   2.656802029233E-07
+mass_residual_rms                        =   8.204404539517E-07
+u_momentum_imbalance                     =   1.827710827872E-04
+v_momentum_imbalance                     =   1.724244011039E-05
+w_momentum_imbalance                     =   6.976370917980E-10
+mass_imbalance                           =   2.594110652166E-06
 normalize_mass_imbalance                 =          1
 END OF PARAMETERS
 -999
